@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #45a049;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.story-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.passage-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.choice-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.choice-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Transiciones suaves para los cambios de pasaje */
+.story-container {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.story-container.fade-out {
+  opacity: 0;
+}
