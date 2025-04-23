@@ -123,4 +123,4 @@ class LlamadoVerdaderoPassage extends HTMLElement {
   }
 }
 
-customElements.define("llamado-verdadero-passage", LlamadoVerdaderoPassage);
+export default LlamadoVerdaderoPassage;

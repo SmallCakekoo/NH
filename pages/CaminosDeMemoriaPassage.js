@@ -125,4 +125,4 @@ class CaminosDeMemoriaPassage extends HTMLElement {
   }
 }
 
-customElements.define("caminos-de-memoria-passage", CaminosDeMemoriaPassage);
+export default CaminosDeMemoriaPassage;

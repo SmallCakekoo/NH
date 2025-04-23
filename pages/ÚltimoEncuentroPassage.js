@@ -140,4 +140,4 @@ class ÚltimoEncuentroPassage extends HTMLElement {
   }
 }
 
-customElements.define("último-encuentro-passage", ÚltimoEncuentroPassage);
+export default ÚltimoEncuentroPassage;

@@ -9,7 +9,6 @@ class AntesDelAlbaPassage extends HTMLElement {
     this.setupEventListeners();
   }
 
-
   render() {
     this.shadowRoot.innerHTML = `
             <style>
@@ -132,4 +131,4 @@ class AntesDelAlbaPassage extends HTMLElement {
   }
 }
 
-customElements.define("antes-del-alba-passage", AntesDelAlbaPassage);
+export default AntesDelAlbaPassage;

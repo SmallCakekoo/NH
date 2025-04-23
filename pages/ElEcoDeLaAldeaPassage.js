@@ -101,4 +101,4 @@ class ElEcoDeLaAldeaPassage extends HTMLElement {
   }
 }
 
-customElements.define("el-eco-de-la-aldea-passage", ElEcoDeLaAldeaPassage);
+export default ElEcoDeLaAldeaPassage;

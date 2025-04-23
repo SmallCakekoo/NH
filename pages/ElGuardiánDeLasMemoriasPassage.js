@@ -115,7 +115,4 @@ class ElGuardiánDeLasMemoriasPassage extends HTMLElement {
   }
 }
 
-customElements.define(
-  "el-guardián-de-las-memorias-passage",
-  ElGuardiánDeLasMemoriasPassage
-);
+export default ElGuardiánDeLasMemoriasPassage;

@@ -110,4 +110,4 @@ class LaLuzYLaSombraPassage extends HTMLElement {
   }
 }
 
-customElements.define("la-luz-y-la-sombra-passage", LaLuzYLaSombraPassage);
+export default LaLuzYLaSombraPassage;

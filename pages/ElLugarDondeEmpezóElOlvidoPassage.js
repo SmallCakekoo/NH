@@ -138,7 +138,4 @@ class ElLugarDondeEmpezóElOlvidoPassage extends HTMLElement {
   }
 }
 
-customElements.define(
-  "el-lugar-donde-empezó-el-olvido-passage",
-  ElLugarDondeEmpezóElOlvidoPassage
-);
+export default ElLugarDondeEmpezóElOlvidoPassage;

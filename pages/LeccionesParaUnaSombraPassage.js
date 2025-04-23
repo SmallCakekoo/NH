@@ -110,7 +110,4 @@ class LeccionesParaUnaSombraPassage extends HTMLElement {
   }
 }
 
-customElements.define(
-  "lecciones-para-una-sombra-passage",
-  LeccionesParaUnaSombraPassage
-);
+export default LeccionesParaUnaSombraPassage;

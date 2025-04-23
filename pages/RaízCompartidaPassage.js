@@ -121,4 +121,4 @@ class RaízCompartidaPassage extends HTMLElement {
   }
 }
 
-customElements.define("raíz-compartida-passage", RaízCompartidaPassage);
+export default RaízCompartidaPassage;

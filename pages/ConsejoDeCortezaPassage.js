@@ -129,4 +129,4 @@ class ConsejoDeCortezaPassage extends HTMLElement {
   }
 }
 
-customElements.define("consejo-de-corteza-passage", ConsejoDeCortezaPassage);
+export default ConsejoDeCortezaPassage;

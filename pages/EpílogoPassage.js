@@ -111,4 +111,4 @@ class EpílogoPassage extends HTMLElement {
   }
 }
 
-customElements.define("epílogo-passage", EpílogoPassage);
+export default EpílogoPassage;

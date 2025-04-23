@@ -125,7 +125,4 @@ class ElBroteQueEligioReirPassage extends HTMLElement {
   }
 }
 
-customElements.define(
-  "el-brote-que-eligio-reir-passage",
-  ElBroteQueEligioReirPassage
-);
+export default ElBroteQueEligioReirPassage;

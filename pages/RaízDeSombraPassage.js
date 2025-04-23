@@ -113,4 +113,4 @@ class RaízDeSombraPassage extends HTMLElement {
   }
 }
 
-customElements.define("raíz-de-sombra-passage", RaízDeSombraPassage);
+export default RaízDeSombraPassage;

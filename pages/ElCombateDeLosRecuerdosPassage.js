@@ -105,7 +105,4 @@ class ElCombateDeLosRecuerdosPassage extends HTMLElement {
   }
 }
 
-customElements.define(
-  "el-combate-de-los-recuerdos-passage",
-  ElCombateDeLosRecuerdosPassage
-);
+export default ElCombateDeLosRecuerdosPassage;

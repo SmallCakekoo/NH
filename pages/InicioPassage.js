@@ -99,21 +99,21 @@ class InicioPassage extends HTMLElement {
         `;
   }
 
-  //   setupEventListeners() {
-  //     const buttons = this.shadowRoot.querySelectorAll(".option-button");
-  //     buttons.forEach((button) => {
-  //       button.addEventListener("click", () => {
-  //         const target = button.getAttribute("data-target");
-  //         this.dispatchEvent(
-  //           new CustomEvent("passage-change", {
-  //             detail: { target },
-  //             bubbles: true,
-  //             composed: true,
-  //           })
-  //         );
-  //       });
-  //     });
-  //   }
+  setupEventListeners() {
+    const buttons = this.shadowRoot.querySelectorAll(".option-button");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = button.getAttribute("data-target");
+        this.dispatchEvent(
+          new CustomEvent("passage-change", {
+            detail: { target },
+            bubbles: true,
+            composed: true,
+          })
+        );
+      });
+    });
+  }
 }
 
 export default InicioPassage;

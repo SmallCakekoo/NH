@@ -134,4 +134,4 @@ class ClaroDelBosquePassage extends HTMLElement {
   }
 }
 
-customElements.define("claro-del-bosque-passage", ClaroDelBosquePassage);
+export default ClaroDelBosquePassage;

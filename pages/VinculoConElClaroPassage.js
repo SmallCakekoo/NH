@@ -123,4 +123,4 @@ class VinculoConElClaroPassage extends HTMLElement {
   }
 }
 
-customElements.define("vinculo-con-el-claro-passage", VinculoConElClaroPassage);
+export default VinculoConElClaroPassage;

@@ -115,4 +115,4 @@ class SombrasQueNoVimosPassage extends HTMLElement {
   }
 }
 
-customElements.define("sombras-que-no-vimos-passage", SombrasQueNoVimosPassage);
+export default SombrasQueNoVimosPassage;

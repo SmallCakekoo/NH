@@ -116,4 +116,4 @@ class EncuentroConUmbraPassage extends HTMLElement {
   }
 }
 
-customElements.define("encuentro-con-umbra-passage", EncuentroConUmbraPassage);
+export default EncuentroConUmbraPassage;

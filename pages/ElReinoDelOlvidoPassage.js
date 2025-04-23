@@ -121,4 +121,4 @@ class ElReinoDelOlvidoPassage extends HTMLElement {
   }
 }
 
-customElements.define("el-reino-del-olvido-passage", ElReinoDelOlvidoPassage);
+export default ElReinoDelOlvidoPassage;

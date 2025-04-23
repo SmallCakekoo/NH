@@ -105,4 +105,4 @@ class ElBosqueMarchitoPassage extends HTMLElement {
   }
 }
 
-customElements.define("el-bosque-marchito-passage", ElBosqueMarchitoPassage);
+export default ElBosqueMarchitoPassage;

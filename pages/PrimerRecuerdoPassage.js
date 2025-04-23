@@ -108,4 +108,4 @@ class PrimerRecuerdoPassage extends HTMLElement {
   }
 }
 
-customElements.define("primer-recuerdo-passage", PrimerRecuerdoPassage);
+export default PrimerRecuerdoPassage;

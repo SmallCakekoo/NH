@@ -105,4 +105,4 @@ class EcosEnLaSombraPassage extends HTMLElement {
   }
 }
 
-customElements.define("ecos-en-la-sombra-passage", EcosEnLaSombraPassage);
+export default EcosEnLaSombraPassage;

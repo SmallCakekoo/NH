@@ -141,4 +141,4 @@ class EcoIrrealPassage extends HTMLElement {
   }
 }
 
-customElements.define("eco-irreal-passage", EcoIrrealPassage);
+export default EcoIrrealPassage;

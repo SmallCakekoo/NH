@@ -125,7 +125,4 @@ class InterferenciaDelClaroPassage extends HTMLElement {
   }
 }
 
-customElements.define(
-  "interferencia-del-claro-passage",
-  InterferenciaDelClaroPassage
-);
+export default InterferenciaDelClaroPassage;

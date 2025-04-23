@@ -112,4 +112,4 @@ class HablanDeUmbraPassage extends HTMLElement {
   }
 }
 
-customElements.define("hablan-de-umbra-passage", HablanDeUmbraPassage);
+export default HablanDeUmbraPassage;

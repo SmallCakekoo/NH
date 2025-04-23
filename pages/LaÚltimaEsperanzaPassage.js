@@ -103,4 +103,4 @@ class LaÚltimaEsperanzaPassage extends HTMLElement {
   }
 }
 
-customElements.define("la-última-esperanza-passage", LaÚltimaEsperanzaPassage);
+export default LaÚltimaEsperanzaPassage;

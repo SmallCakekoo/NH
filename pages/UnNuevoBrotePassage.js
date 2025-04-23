@@ -100,7 +100,7 @@ class UnNuevoBrotePassage extends HTMLElement {
                     Si lo haces bien... nunca termina.
                 </div>
                 <div class="options-container">
-                    <button class="option-button" data-target="FIN">Continuar</button>
+                    <button class="option-button" data-target="FIN">FIN</button>
                 </div>
             </div>
         `;
@@ -123,4 +123,4 @@ class UnNuevoBrotePassage extends HTMLElement {
   }
 }
 
-customElements.define("un-nuevo-brote-passage", UnNuevoBrotePassage);
+export default UnNuevoBrotePassage;

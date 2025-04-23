@@ -1,4 +1,4 @@
-class ÚltimoEncuentroPassage extends HTMLElement {
+class UnRecuerdoFragmentadoPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -65,59 +65,22 @@ class ÚltimoEncuentroPassage extends HTMLElement {
               <div class="passage-container">
                   <img class="passage-image" src="https://picsum.photos/id/237/200/300" alt="Escena del pasaje">
                   <div class="passage-text">
-                      Nilo no tuvo que decir nada.
-                      Umbra ya lo sabía.
-  
-                      La presencia del pequeño guardián le erizaba las raíces, como si algo antiguo —algo que había aprendido a callar— volviera a la superficie.
-  
-                      —¿Por qué has venido? —murmuró Umbra, su voz temblaba, profunda, como si hablara a través del mismo suelo.
-  
-                      —Porque nadie merece desaparecer sin ser recordado, pero necesito que te detengas —respondió Nilo.
-  
-                      El silencio se volvió espeso.
-                      Ni los hongos se movían.
-                      El bosque entero parecía esperar una confesión.
-  
-                      —Yo no quería hacer daño. . .—susurró Umbra— pero tenía tanto miedo de desaparecer.
-                      Así que tomé. Tomé todo lo que pude.
-                      Memorias cálidas. Canciones. Risas. Hasta los nombres de los árboles.
-                      Las bebí.
-                      Y en su lugar. . . dejé sombra.
-  
-                      La tierra crujió. Los hongos temblaron levemente, como si revivieran el dolor.
-                      Era cierto.
-                      Umbra había marchitado el bosque. No por odio. Más bien, por hambre. Por vacío.
-  
-                      —Si me tocas. . . te arrastraré conmigo. No podré evitarlo. Corromperé lo que queda de ti.
-  
-                      Nilo bajó la mirada, no con miedo.
-                      Con compasión. Y firmeza.
-  
-                      —No todo se perderá.
-  
-                      Umbra titubeó.
-                      Por primera vez, no por culpa ni rencor…
-                      Sino por duda. Por un deseo de ser otra cosa.
-  
-                      Y entonces… ocurrió.
-  
-                      Un recuerdo emergió.
-                      Pero no de Umbra.
-  
-                      Era de Nilo.
-  
-                      Un destello de sol.
-                      Luma, con los ojos cerrados, recibiendo una gota brillante.
-                      Una memoria. Varias memorias, eran todas las memorias de la gente que Nilo alguna vez había cuidado.
-  
-                      —¿Qué has hecho? —susurró Umbra, confundido.
-  
-                      —He hecho espacio —respondió Nilo.
-  
-                      Y dio un paso más.
+                      Uno de esos días —no sabría decir cuál— Nilo se quedó dormido bajo un árbol dorado del Claro.
+
+                      El viento lo mecía con suavidad, pero en su sueño no encontró paz.
+
+                      Cerró los ojos. Y algo apareció.
+
+                      Una figura lejana, hecha de pétalos y niebla, surgió entre la bruma del sueño.
+
+                      Sus bordes titilaban, como si la memoria que la contenía estuviera incompleta.
+
+                      A veces reía. A veces lloraba. A veces florecía. A veces se apagaba.
+                      
+                      Nilo quiso acercarse. Quiso hablar. Pero sus pensamientos se deshicieron como rocío al sol.
                   </div>
                   <div class="options-container">
-                      <button class="option-button" data-target="Epílogo">Unirse a Umbra</button>
+                      <button class="option-button" data-target="Raíz Incierta">Intentar comprender lo que vio</button>
                   </div>
               </div>
           `;
@@ -140,4 +103,4 @@ class ÚltimoEncuentroPassage extends HTMLElement {
   }
 }
 
-customElements.define("último-encuentro-passage", ÚltimoEncuentroPassage);
+export default UnRecuerdoFragmentadoPassage;

@@ -135,7 +135,4 @@ class ElClaroDeLasRisasPassage extends HTMLElement {
   }
 }
 
-customElements.define(
-  "el-claro-de-las-risas-passage",
-  ElClaroDeLasRisasPassage
-);
+export default ElClaroDeLasRisasPassage;

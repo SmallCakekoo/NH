@@ -130,4 +130,4 @@ class UnPaseoIncomodoPassage extends HTMLElement {
   }
 }
 
-customElements.define("un-paseo-incomodo-passage", UnPaseoIncomodoPassage);
+export default UnPaseoIncomodoPassage;

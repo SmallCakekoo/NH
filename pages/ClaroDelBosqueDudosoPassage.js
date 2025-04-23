@@ -126,7 +126,4 @@ class ClaroDelBosqueDudosoPassage extends HTMLElement {
   }
 }
 
-customElements.define(
-  "claro-del-bosque-dudoso-passage",
-  ClaroDelBosqueDudosoPassage
-);
+export default ClaroDelBosqueDudosoPassage;

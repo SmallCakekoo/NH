@@ -118,4 +118,4 @@ class EnBuscaDeUmbraPassage extends HTMLElement {
   }
 }
 
-customElements.define("en-busca-de-umbra-passage", EnBuscaDeUmbraPassage);
+export default EnBuscaDeUmbraPassage;

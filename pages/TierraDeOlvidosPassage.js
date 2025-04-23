@@ -117,4 +117,4 @@ class TierraDeOlvidosPassage extends HTMLElement {
   }
 }
 
-customElements.define("tierra-de-olvidos-passage", TierraDeOlvidosPassage);
+export default TierraDeOlvidosPassage;

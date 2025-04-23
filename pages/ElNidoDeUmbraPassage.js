@@ -105,4 +105,4 @@ class ElNidoDeUmbraPassage extends HTMLElement {
   }
 }
 
-customElements.define("el-nido-de-umbra-passage", ElNidoDeUmbraPassage);
+export default ElNidoDeUmbraPassage;

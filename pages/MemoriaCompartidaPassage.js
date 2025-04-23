@@ -114,7 +114,7 @@ class MemoriaCompartidaPassage extends HTMLElement {
                     Una que el bosque sabría llenar cuando volviera a cantar.
                 </div>
                 <div class="options-container">
-                    <button class="option-button" data-target="Un nuevo brote">Continuar</button>
+                    <button class="option-button" data-target="Un nuevo brote">Epílogo</button>
                 </div>
             </div>
         `;
@@ -137,4 +137,4 @@ class MemoriaCompartidaPassage extends HTMLElement {
   }
 }
 
-customElements.define("memoria-compartida-passage", MemoriaCompartidaPassage);
+export default MemoriaCompartidaPassage;

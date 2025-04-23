@@ -112,4 +112,4 @@ class SombrasAntiguasPassage extends HTMLElement {
   }
 }
 
-customElements.define("sombras-antiguas-passage", SombrasAntiguasPassage);
+export default SombrasAntiguasPassage;

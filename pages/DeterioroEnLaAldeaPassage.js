@@ -111,7 +111,4 @@ class DeterioroEnLaAldeaPassage extends HTMLElement {
   }
 }
 
-customElements.define(
-  "deterioro-en-la-aldea-passage",
-  DeterioroEnLaAldeaPassage
-);
+export default DeterioroEnLaAldeaPassage;

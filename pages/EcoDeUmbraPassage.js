@@ -129,4 +129,4 @@ class EcoDeUmbraPassage extends HTMLElement {
   }
 }
 
-customElements.define("eco-de-umbra-passage", EcoDeUmbraPassage);
+export default EcoDeUmbraPassage;

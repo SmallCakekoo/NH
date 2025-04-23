@@ -123,4 +123,4 @@ class RaízInciertaPassage extends HTMLElement {
   }
 }
 
-customElements.define("raíz-incierta-passage", RaízInciertaPassage);
+export default RaízInciertaPassage;
