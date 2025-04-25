@@ -1,3 +1,4 @@
+import "../public/styles/main.css";
 import AppContainer from "./components/AppContainer.js";
 
 customElements.define("app-container", AppContainer);
