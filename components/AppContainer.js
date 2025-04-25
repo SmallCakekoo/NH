@@ -6,6 +6,10 @@ class AppContainer extends HTMLElement {
     this.audio.loop = true;
     this.audio.volume = 0.3;
     this.isMuted = false;
+    this.boundPassageChangeHandler = this.handlePassageChange.bind(this);
+    this.boundBackButtonHandler = this.handleBackButton.bind(this);
+    this.boundAudioControlHandler = this.handleAudioControl.bind(this);
+    this.boundVolumeControlHandler = this.handleVolumeControl.bind(this);
     this.render();
     this.setupEventListeners();
     this.initializeAudio();
@@ -15,7 +19,6 @@ class AppContainer extends HTMLElement {
     try {
       await this.audio.load();
 
-      // Intentar reproducir automáticamente
       try {
         await this.audio.play();
         console.log("Audio iniciado correctamente");
@@ -24,7 +27,6 @@ class AppContainer extends HTMLElement {
           "No se pudo reproducir automáticamente, esperando interacción del usuario"
         );
 
-        // Mostrar un mensaje visual al usuario
         const audioMessage = document.createElement("div");
         audioMessage.style.cssText = `
           position: fixed;
@@ -169,37 +171,29 @@ class AppContainer extends HTMLElement {
   }
 
   setupEventListeners() {
-    this.addEventListener("passage-change", (event) => {
-      this.navigateToPassage(event.detail.target);
-    });
+    this.removeEventListener("passage-change", this.boundPassageChangeHandler);
+
+    this.addEventListener("passage-change", this.boundPassageChangeHandler);
 
     const backButton = this.querySelector("#backButton");
     if (backButton) {
-      backButton.addEventListener("click", () => {
-        this.currentPassage = "main-page";
-        this.render();
-        this.setupEventListeners();
-        window.scrollTo(0, 0);
-      });
+      backButton.removeEventListener("click", this.boundBackButtonHandler);
+      backButton.addEventListener("click", this.boundBackButtonHandler);
     }
 
     const audioControl = this.querySelector("#audioControl");
     if (audioControl) {
-      audioControl.addEventListener("click", (e) => {
-        e.stopPropagation();
-        this.toggleMute();
-      });
+      audioControl.removeEventListener("click", this.boundAudioControlHandler);
+      audioControl.addEventListener("click", this.boundAudioControlHandler);
     }
 
     const volumeControl = this.querySelector("#volumeControl");
     if (volumeControl) {
-      volumeControl.addEventListener("click", (e) => {
-        e.stopPropagation();
-        const rect = volumeControl.getBoundingClientRect();
-        const y = rect.bottom - e.clientY;
-        const volume = y / rect.height;
-        this.setVolume(volume);
-      });
+      volumeControl.removeEventListener(
+        "click",
+        this.boundVolumeControlHandler
+      );
+      volumeControl.addEventListener("click", this.boundVolumeControlHandler);
     }
 
     document.addEventListener("visibilitychange", () => {
@@ -211,6 +205,30 @@ class AppContainer extends HTMLElement {
           .catch((error) => console.log("Error al reanudar audio:", error));
       }
     });
+  }
+
+  handlePassageChange(event) {
+    this.navigateToPassage(event.detail.target);
+  }
+
+  handleBackButton() {
+    this.currentPassage = "main-page";
+    this.render();
+    this.setupEventListeners();
+    window.scrollTo(0, 0);
+  }
+
+  handleAudioControl(e) {
+    e.stopPropagation();
+    this.toggleMute();
+  }
+
+  handleVolumeControl(e) {
+    e.stopPropagation();
+    const rect = e.currentTarget.getBoundingClientRect();
+    const y = rect.bottom - e.clientY;
+    const volume = y / rect.height;
+    this.setVolume(volume);
   }
 
   toggleMute() {
