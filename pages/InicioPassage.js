@@ -2,14 +2,15 @@ class InicioPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
+    this.imageLoaded = false;
   }
 
   connectedCallback() {
-    this.render();
-    this.setupEventListeners();
+    this.renderSkeleton();
+    this.loadImage();
   }
 
-  render() {
+  renderSkeleton() {
     this.shadowRoot.innerHTML = `
             <style>
                 :host {
@@ -21,14 +22,46 @@ class InicioPassage extends HTMLElement {
                     max-width: 800px;
                     margin: 0 auto;
                     text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
                 }
 
+                .image-container {
+                    position: relative;
+                    width: 100%;
+                    max-width: 600px;
+                    height: 300px;
+                    margin: 0 auto 20px;
+                    background-color: rgba(1, 19, 48, 0.5);
+                    border-radius: 8px;
+                    z-index: 1;
+                }
+
+                .loading-spinner {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 40px;
+                    height: 40px;
+                    border: 4px solid rgba(7, 192, 213, 0.3);
+                    border-radius: 50%;
+                    border-top-color: #07c0d5;
+                    animation: spin 1s ease-in-out infinite;
+                }
+
+                @keyframes spin {
+                    to { transform: translate(-50%, -50%) rotate(360deg); }
+                }
+                
                 .passage-image {
                     width: 100%;
                     max-width: 600px;
                     height: auto;
                     border-radius: 8px;
-                    margin-bottom: 20px;
+                    display: none;
+                    object-fit: contain;
                 }
 
                 .passage-text {
@@ -51,6 +84,7 @@ class InicioPassage extends HTMLElement {
                         0 0 0 4px #011330,
                         0 0 0 8px #07c0d5;
                     position: relative;
+                    z-index: 2;
                 }
 
                 .passage-text::before {
@@ -68,6 +102,7 @@ class InicioPassage extends HTMLElement {
                         rgba(0, 236, 214, 0.1) 4px
                     );
                     pointer-events: none;
+                    z-index: -1;
                 }
 
                 .option-button {
@@ -89,7 +124,6 @@ class InicioPassage extends HTMLElement {
                         0 0 10px rgba(0, 236, 214, 0.3);
                     outline: none;
                     min-width: 250px;
-                    animation: pulse 2s infinite;
                     transition: transform 0.2s ease, box-shadow 0.2s ease;
                 }
 
@@ -104,29 +138,40 @@ class InicioPassage extends HTMLElement {
                     transform: scale(0.98);
                 }
 
-                @keyframes pulse {
-                    0%, 100% {
-                        box-shadow: 
-                            inset 0 0 10px rgba(0, 236, 214, 0.3),
-                            0 0 10px rgba(0, 236, 214, 0.3);
-                    }
-                    50% {
-                        box-shadow: 
-                            inset 0 0 15px rgba(0, 236, 214, 0.5),
-                            0 0 20px rgba(0, 236, 214, 0.5);
-                    }
-                }
-
                 .options-container {
                     display: flex;
                     justify-content: center;
                     gap: 30px;
                     margin-top: 30px;
+                    z-index: 3;
+                    position: relative;
+                }
+
+                /* Ajustes responsive */
+                @media screen and (max-width: 768px) {
+                    .image-container {
+                        height: 200px;
+                    }
+                    
+                    .options-container {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 15px;
+                    }
+                    
+                    .option-button {
+                        width: 80%;
+                        min-width: auto;
+                        font-size: 1.2em;
+                    }
                 }
             </style>
 
             <div class="passage-container">
-                <img class="passage-image" src="assets/images/PS1.png" alt="Escena del pasaje">
+                <div class="image-container">
+                    <div class="loading-spinner"></div>
+                    <img class="passage-image" alt="Escena del pasaje">
+                </div>
                 <div class="passage-text">
                     El rocío de la mañana aún se aferraba a las hojas cuando Nilo seguía enredado en sueños. Su cuerpo diminuto, hecho de bruma y curiosidad, descansaba en la raíz tibia de un ceibo viejo.
 
@@ -160,6 +205,45 @@ class InicioPassage extends HTMLElement {
                 </div>
             </div>
         `;
+  }
+
+  loadImage() {
+    const img = new Image();
+    img.onload = () => {
+      const passageImage = this.shadowRoot.querySelector(".passage-image");
+      const loadingSpinner = this.shadowRoot.querySelector(".loading-spinner");
+      const imageContainer = this.shadowRoot.querySelector(".image-container");
+
+      if (passageImage) {
+        passageImage.src = img.src;
+        passageImage.style.display = "block";
+
+        // Ajustar altura del contenedor a la altura real de la imagen
+        if (imageContainer && img.height > 0) {
+          imageContainer.style.height = "auto";
+          imageContainer.style.minHeight = "300px";
+        }
+      }
+
+      if (loadingSpinner) {
+        loadingSpinner.style.display = "none";
+      }
+
+      this.imageLoaded = true;
+      this.setupEventListeners();
+    };
+
+    img.onerror = () => {
+      console.error("Error al cargar la imagen del pasaje");
+      const loadingSpinner = this.shadowRoot.querySelector(".loading-spinner");
+      if (loadingSpinner) {
+        loadingSpinner.style.display = "none";
+      }
+
+      this.setupEventListeners();
+    };
+
+    img.src = "assets/images/PS1.png";
   }
 
   setupEventListeners() {

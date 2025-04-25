@@ -1,0 +1,16 @@
+{
+  "name": "aqua-anima",
+  "version": "1.0.0",
+  "description": "Historias interactivas con Web Components",
+  "main": "index.js",
+  "scripts": {
+    "optimize-images": "node scripts/optimize-images.js",
+    "dev": "lite-server",
+    "build": "npm run optimize-images"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "sharp": "^0.32.1"
+  }
+}

@@ -233,6 +233,8 @@ class AppContainer extends HTMLElement {
   }
 
   navigateToPassage(target) {
+    const previousPassage = this.currentPassage;
+
     if (target === "FIN") {
       this.currentPassage = "fin-passage";
     } else if (target === "Personajes") {
@@ -241,9 +243,50 @@ class AppContainer extends HTMLElement {
       const targetElement = this.formatPassageName(target);
       this.currentPassage = targetElement;
     }
-    this.render();
-    this.setupEventListeners();
-    window.scrollTo(0, 0);
+
+    // Ocultar el contenido actual mientras se carga el nuevo pasaje
+    this.querySelector(`.story-container`).style.opacity = "0";
+
+    // Solicitar la carga del componente si es necesario
+    document.dispatchEvent(
+      new CustomEvent("passage-requested", {
+        detail: { passageName: this.currentPassage },
+        bubbles: true,
+      })
+    );
+
+    // Escuchar cuando el pasaje esté listo o usar un timeout como fallback
+    const handlePassageLoaded = (event) => {
+      if (event.detail.passageName === this.currentPassage) {
+        this.render();
+        this.setupEventListeners();
+        window.scrollTo(0, 0);
+
+        // Mostrar el contenido con una pequeña animación
+        setTimeout(() => {
+          const container = this.querySelector(`.story-container`);
+          if (container) container.style.opacity = "1";
+        }, 50);
+
+        document.removeEventListener("passage-loaded", handlePassageLoaded);
+      }
+    };
+
+    document.addEventListener("passage-loaded", handlePassageLoaded);
+
+    // Fallback si el pasaje ya está cargado
+    if (customElements.get(this.currentPassage)) {
+      setTimeout(() => {
+        this.render();
+        this.setupEventListeners();
+        window.scrollTo(0, 0);
+
+        setTimeout(() => {
+          const container = this.querySelector(`.story-container`);
+          if (container) container.style.opacity = "1";
+        }, 50);
+      }, 100);
+    }
   }
 
   formatPassageName(name) {

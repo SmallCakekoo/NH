@@ -1,141 +1,136 @@
 import AppContainer from "./components/AppContainer.js";
-
-customElements.define("app-container", AppContainer);
-
-//pages
-import InicioPassage from "./pages/InicioPassage.js";
 import MainPage from "./pages/MainPage.js";
-import MemoriaCompartidaPassage from "./pages/MemoriaCompartidaPassage.js";
-import ElSusurroDeLosSiglosPassage from "./pages/ElSusurroDeLosSiglosPassage.js";
-import AntesDelAlbaPassage from "./pages/AntesDelAlbaPassage.js";
-import VinculoConElClaroPassage from "./pages/VinculoConElClaroPassage.js";
-import UnRecuerdoFragmentadoPassage from "./pages/UnRecuerdoFragmentadoPassage.js";
-import UnPaseoIncomodoPassage from "./pages/UnPaseoIncomodoPassage.js";
-import UnNuevoBrotePassage from "./pages/UnNuevoBrotePassage.js";
-import ÚltimoEncuentroPassage from "./pages/ÚltimoEncuentroPassage.js";
-import TierraDeOlvidosPassage from "./pages/TierraDeOlvidosPassage.js";
-import SombrasQueNoVimosPassage from "./pages/SombrasQueNoVimosPassage.js";
-import SombrasAntiguasPassage from "./pages/SombrasAntiguasPassage.js";
-import RaízInciertaPassage from "./pages/RaízInciertaPassage.js";
-import RaízDeSombraPassage from "./pages/RaízDeSombraPassage.js";
-import RaízCompartidaPassage from "./pages/RaízCompartidaPassage.js";
-import PrimerRecuerdoPassage from "./pages/PrimerRecuerdoPassage.js";
-import LlamadoVerdaderoPassage from "./pages/LlamadoVerdaderoPassage.js";
-import LeccionesParaUnaSombraPassage from "./pages/LeccionesParaUnaSombraPassage.js";
-import LaÚltimaEsperanzaPassage from "./pages/LaÚltimaEsperanzaPassage.js";
-import LaLuzYLaSombraPassage from "./pages/LaLuzYLaSombraPassage.js";
-import InterferenciaDelClaroPassage from "./pages/InterferenciaDelClaroPassage.js";
-import HablanDeUmbraPassage from "./pages/HablanDeUmbraPassage.js";
-import EpílogoPassage from "./pages/EpílogoPassage.js";
-import EncuentroConUmbraPassage from "./pages/EncuentroConUmbraPassage.js";
-import EnBuscaDeUmbraPassage from "./pages/EnBuscaDeUmbraPassage.js";
-import ElReinoDelOlvidoPassage from "./pages/ElReinoDelOlvidoPassage.js";
-import ElNidoDeUmbraPassage from "./pages/ElNidoDeUmbraPassage.js";
-import ElLugarDondeEmpezóElOlvidoPassage from "./pages/ElLugarDondeEmpezóElOlvidoPassage.js";
-import ElGuardiánDeLasMemoriasPassage from "./pages/ElGuardiánDeLasMemoriasPassage.js";
-import ElEcoDeUnaNuevaGuardianaPassage from "./pages/ElEcoDeUnaNuevaGuardianaPassage.js";
-import ElEcoDeLaAldeaPassage from "./pages/ElEcoDeLaAldeaPassage.js";
-import ElCombateDeLosRecuerdosPassage from "./pages/ElCombateDeLosRecuerdosPassage.js";
-import ElClaroDeLasRisasPassage from "./pages/ElClaroDeLasRisasPassage.js";
-import ElBroteQueEligioReirPassage from "./pages/ElBroteQueEligioReirPassage.js";
-import ElBosqueMarchitoPassage from "./pages/ElBosqueMarchitoPassage.js";
-import EcosEnLaSombraPassage from "./pages/EcosEnLaSombraPassage.js";
-import EcoIrrealPassage from "./pages/EcoIrrealPassage.js";
-import EcoDeUmbraPassage from "./pages/EcoDeUmbraPassage.js";
-import DeterioroEnLaAldeaPassage from "./pages/DeterioroEnLaAldeaPassage.js";
-import ConsejoDeCortezaPassage from "./pages/ConsejoDeCortezaPassage.js";
-import ClaroDelBosquePassage from "./pages/ClaroDelBosquePassage.js";
-import ClaroDelBosqueDudosoPassage from "./pages/ClaroDelBosqueDudosoPassage.js";
-import CaminosDeMemoriaPassage from "./pages/CaminosDeMemoriaPassage.js";
-import YEntoncesQuePassoConNiloPassage from "./pages/YEntoncesQuePassoConNiloPassage.js";
-import LaNegacionDeNiloPassage from "./pages/LaNegacionDeNiloPassage.js";
-import FinPassage from "./pages/FinPassage.js";
 import PersonajesPassage from "./pages/PersonajesPassage.js";
 
-customElements.define("inicio-passage", InicioPassage);
+// Registrar los componentes principales
+customElements.define("app-container", AppContainer);
 customElements.define("main-page", MainPage);
-customElements.define("memoria-compartida-passage", MemoriaCompartidaPassage);
-customElements.define(
-  "el-susurro-de-los-siglos-passage",
-  ElSusurroDeLosSiglosPassage
-);
-customElements.define("antes-del-alba-passage", AntesDelAlbaPassage);
-customElements.define("vinculo-con-el-claro-passage", VinculoConElClaroPassage);
-customElements.define(
-  "un-recuerdo-fragmentado-passage",
-  UnRecuerdoFragmentadoPassage
-);
-customElements.define("un-paseo-incomodo-passage", UnPaseoIncomodoPassage);
-customElements.define("un-nuevo-brote-passage", UnNuevoBrotePassage);
-customElements.define("ultimo-encuentro-passage", ÚltimoEncuentroPassage);
-customElements.define("tierra-de-olvidos-passage", TierraDeOlvidosPassage);
-customElements.define("sombras-que-no-vimos-passage", SombrasQueNoVimosPassage);
-customElements.define("sombras-antiguas-passage", SombrasAntiguasPassage);
-customElements.define("raiz-incierta-passage", RaízInciertaPassage);
-customElements.define("raiz-de-sombra-passage", RaízDeSombraPassage);
-customElements.define("raiz-compartida-passage", RaízCompartidaPassage);
-customElements.define("primer-recuerdo-passage", PrimerRecuerdoPassage);
-customElements.define("llamado-verdadero-passage", LlamadoVerdaderoPassage);
-customElements.define(
-  "lecciones-para-una-sombra-passage",
-  LeccionesParaUnaSombraPassage
-);
-customElements.define("la-ultima-esperanza-passage", LaÚltimaEsperanzaPassage);
-customElements.define("la-luz-y-la-sombra-passage", LaLuzYLaSombraPassage);
-customElements.define(
-  "interferencia-del-claro-passage",
-  InterferenciaDelClaroPassage
-);
-customElements.define("hablan-de-umbra-passage", HablanDeUmbraPassage);
-customElements.define("epilogo-passage", EpílogoPassage);
-customElements.define("encuentro-con-umbra-passage", EncuentroConUmbraPassage);
-customElements.define("en-busca-de-umbra-passage", EnBuscaDeUmbraPassage);
-customElements.define("el-reino-del-olvido-passage", ElReinoDelOlvidoPassage);
-customElements.define("el-nido-de-umbra-passage", ElNidoDeUmbraPassage);
-customElements.define(
-  "el-lugar-donde-empezo-el-olvido-passage",
-  ElLugarDondeEmpezóElOlvidoPassage
-);
-customElements.define(
-  "el-guardian-de-las-memorias-passage",
-  ElGuardiánDeLasMemoriasPassage
-);
-customElements.define(
-  "el-eco-de-una-nueva-guardiana-passage",
-  ElEcoDeUnaNuevaGuardianaPassage
-);
-customElements.define("el-eco-de-la-aldea-passage", ElEcoDeLaAldeaPassage);
-customElements.define(
-  "el-combate-de-los-recuerdos-passage",
-  ElCombateDeLosRecuerdosPassage
-);
-customElements.define(
-  "el-claro-de-las-risas-passage",
-  ElClaroDeLasRisasPassage
-);
-customElements.define(
-  "el-brote-que-eligio-reir-passage",
-  ElBroteQueEligioReirPassage
-);
-customElements.define("el-bosque-marchito-passage", ElBosqueMarchitoPassage);
-customElements.define("ecos-en-la-sombra-passage", EcosEnLaSombraPassage);
-customElements.define("eco-irreal-passage", EcoIrrealPassage);
-customElements.define("eco-de-umbra-passage", EcoDeUmbraPassage);
-customElements.define(
-  "deterioro-en-la-aldea-passage",
-  DeterioroEnLaAldeaPassage
-);
-customElements.define("consejo-de-corteza-passage", ConsejoDeCortezaPassage);
-customElements.define("claro-del-bosque-passage", ClaroDelBosquePassage);
-customElements.define(
-  "claro-del-bosque-dudoso-passage",
-  ClaroDelBosqueDudosoPassage
-);
-customElements.define("caminos-de-memoria-passage", CaminosDeMemoriaPassage);
-customElements.define(
-  "y-entonces-que-passo-con-nilo-passage",
-  YEntoncesQuePassoConNiloPassage
-);
-customElements.define("la-negacion-de-nilo-passage", LaNegacionDeNiloPassage);
-customElements.define("fin-passage", FinPassage);
 customElements.define("personajes-passage", PersonajesPassage);
+
+// Objeto para almacenar referencias a los módulos cargados
+const loadedModules = {};
+
+// Función para cargar dinámicamente un pasaje cuando sea necesario
+async function loadPassage(passageName) {
+  // Verificar explícitamente si el componente ya está registrado
+  if (customElements.get(passageName)) {
+    console.log(
+      `El componente ${passageName} ya está registrado, omitiendo carga.`
+    );
+    return;
+  }
+
+  // Evitar intentos repetidos de carga para el mismo pasaje
+  // usando una marca de que está en proceso de carga
+  if (window._loadingPassages && window._loadingPassages[passageName]) {
+    console.log(
+      `El componente ${passageName} ya está en proceso de carga, omitiendo duplicado.`
+    );
+    return;
+  }
+
+  // Marcar este pasaje como "en proceso de carga"
+  if (!window._loadingPassages) window._loadingPassages = {};
+  window._loadingPassages[passageName] = true;
+
+  try {
+    // Quitar el sufijo "-passage" si existe
+    const baseName = passageName.endsWith("-passage")
+      ? passageName.slice(0, -8)
+      : passageName;
+
+    // Mapeo de nombres especiales con acentos
+    const specialNameMapping = {
+      "ultimo-encuentro": "ÚltimoEncuentro",
+      "último-encuentro": "ÚltimoEncuentro", // Agregar ambas variantes
+      "la-ultima-esperanza": "LaÚltimaEsperanza",
+      "la-última-esperanza": "LaÚltimaEsperanza", // Agregar ambas variantes
+      "raiz-incierta": "RaízIncierta",
+      "raíz-incierta": "RaízIncierta", // Agregar ambas variantes
+      "raiz-de-sombra": "RaízDeSombra",
+      "raíz-de-sombra": "RaízDeSombra", // Agregar ambas variantes
+      "raiz-compartida": "RaízCompartida",
+      "raíz-compartida": "RaízCompartida", // Agregar ambas variantes
+      "el-lugar-donde-empezo-el-olvido": "ElLugarDondeEmpezóElOlvido",
+      "el-lugar-donde-empezó-el-olvido": "ElLugarDondeEmpezóElOlvido", // Agregar ambas variantes
+      "el-guardian-de-las-memorias": "ElGuardiánDeLasMemorias",
+      "el-guardián-de-las-memorias": "ElGuardiánDeLasMemorias", // Agregar ambas variantes
+      "el-eco-de-una-nueva-guardiana": "ElEcoDeUnaNuevaGuardiana",
+    };
+
+    // Verificar si tenemos un mapeo especial para este pasaje
+    let fileName;
+    if (specialNameMapping[baseName]) {
+      fileName = specialNameMapping[baseName] + "Passage";
+      console.log(`Usando mapeo especial para ${baseName} → ${fileName}`);
+    } else {
+      // Convertir el nombre del pasaje a formato camelCase para el archivo
+      fileName =
+        baseName
+          .replace(/-([a-z])/g, (g) => g[1].toUpperCase())
+          .replace(/^[a-z]/, (g) => g.toUpperCase()) + "Passage";
+    }
+
+    // Si el módulo ya fue cargado anteriormente, usarlo
+    if (loadedModules[fileName]) {
+      // Verificar una vez más que el componente no esté ya registrado
+      if (!customElements.get(passageName)) {
+        console.log(`Usando módulo previamente cargado para ${passageName}`);
+        customElements.define(passageName, loadedModules[fileName].default);
+      } else {
+        console.log(
+          `El componente ${passageName} ya está registrado (verificación 2)`
+        );
+      }
+
+      // Desmarcar como "en proceso de carga"
+      if (window._loadingPassages) delete window._loadingPassages[passageName];
+      return;
+    }
+
+    // Cargar el módulo dinámicamente
+    console.log(`Intentando cargar: ./pages/${fileName}.js`);
+    const module = await import(`./pages/${fileName}.js`);
+    loadedModules[fileName] = module;
+
+    // Registrar el elemento personalizado solo si no está registrado ya
+    if (!customElements.get(passageName)) {
+      customElements.define(passageName, module.default);
+      console.log(`Pasaje ${passageName} cargado dinámicamente`);
+    } else {
+      console.log(
+        `El componente ${passageName} ya está registrado (verificación 3)`
+      );
+    }
+
+    // Notificar que el pasaje está listo
+    document.dispatchEvent(
+      new CustomEvent("passage-loaded", {
+        detail: { passageName },
+        bubbles: true,
+      })
+    );
+  } catch (error) {
+    console.error(`Error al cargar el pasaje ${passageName}:`, error);
+
+    // Mostrar mensaje de error en la consola para facilitar la depuración
+    console.error(
+      `Revisa que el archivo exista en la carpeta pages/ y que el nombre sea correcto.`
+    );
+    console.error(
+      `Si el pasaje tiene acentos, asegúrate de que esté incluido en el objeto specialNameMapping.`
+    );
+  } finally {
+    // Desmarcar como "en proceso de carga" sin importar si hay error o no
+    if (window._loadingPassages) delete window._loadingPassages[passageName];
+  }
+}
+
+// Agregar un oyente personalizado para la carga de pasajes
+document.addEventListener("passage-requested", async (event) => {
+  const passageName = event.detail.passageName;
+  await loadPassage(passageName);
+});
+
+// Pre-cargar pasaje de inicio para tenerlo listo
+loadPassage("inicio-passage");

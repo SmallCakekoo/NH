@@ -6,10 +6,75 @@
     <title>Aqua Anima</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/BG.png" />
 
+    <!-- Precargar imágenes críticas -->
+    <link rel="preload" href="./assets/images/Portada.jpg" as="image" />
+    <link rel="preload" href="./assets/images/Comenzar.png" as="image" />
+    <link rel="preload" href="./assets/images/Personajes.png" as="image" />
+
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
+    <!-- Contenedor principal de la aplicación -->
     <app-container></app-container>
+
+    <!-- Mensajes de estado durante la carga -->
+    <div
+      id="app-loading"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #011330;
+        color: #07c0d5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      "
+    >
+      <div
+        style="
+          width: 50px;
+          height: 50px;
+          border: 5px solid rgba(7, 192, 213, 0.3);
+          border-radius: 50%;
+          border-top-color: #07c0d5;
+          animation: spin 1s ease-in-out infinite;
+        "
+      ></div>
+      <p style="margin-top: 20px; font-size: 16px">Cargando Aqua Anima...</p>
+      <style>
+        @keyframes spin {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      </style>
+    </div>
+
+    <!-- Scripts principales -->
     <script type="module" src="index.js"></script>
+
+    <!-- Script de depuración para ayuda en desarrollo -->
+    <script src="./scripts/debug.js"></script>
+
+    <!-- Ocultar pantalla de carga cuando la aplicación esté lista -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          const loadingScreen = document.getElementById("app-loading");
+          if (loadingScreen) {
+            loadingScreen.style.opacity = "0";
+            loadingScreen.style.transition = "opacity 0.5s ease";
+            setTimeout(() => {
+              loadingScreen.style.display = "none";
+            }, 500);
+          }
+        }, 800);
+      });
+    </script>
   </body>
 </html>
