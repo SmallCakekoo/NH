@@ -15,7 +15,6 @@ class LaNegacionDeNiloPassage extends HTMLElement {
                 :host {
                     display: block;
                     padding: 20px;
-                    font-family: Arial, sans-serif;
                 }
 
                 .passage-container {
@@ -37,60 +36,123 @@ class LaNegacionDeNiloPassage extends HTMLElement {
                     line-height: 1.6;
                     margin-bottom: 30px;
                     white-space: pre-line;
-                    text-align: left;
+                    background-color: #011330;
+                    color: #00ecd6;
+                    padding: 20px;
+                    border: 4px solid #07c0d5;
+                    border-image: repeating-linear-gradient(
+                        45deg,
+                        #07c0d5,
+                        #07c0d5 10px,
+                        #00ecd6 10px,
+                        #00ecd6 20px
+                    ) 4;
+                    box-shadow: 
+                        0 0 0 4px #011330,
+                        0 0 0 8px #07c0d5;
+                    position: relative;
+                }
+
+                .passage-text::before {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    left: -2px;
+                    right: -2px;
+                    bottom: -2px;
+                    background: repeating-linear-gradient(
+                        45deg,
+                        transparent,
+                        transparent 2px,
+                        rgba(0, 236, 214, 0.1) 2px,
+                        rgba(0, 236, 214, 0.1) 4px
+                    );
+                    pointer-events: none;
+                }
+
+                .option-button {
+                    padding: 15px 30px;
+                    font-size: 1.4em;
+                    background-image: url('assets/images/FondoBTN.png');
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #011330;
+                    color: #00ecd6;
+                    border: none;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    font-family: var(--font-buttons);
+                    text-shadow: 0 0 5px #07c0d5;
+                    box-shadow: 
+                        inset 0 0 10px rgba(0, 236, 214, 0.3),
+                        0 0 10px rgba(0, 236, 214, 0.3);
+                    outline: none;
+                    min-width: 250px;
+                    animation: pulse 2s infinite;
+                    transition: transform 0.2s ease, box-shadow 0.2s ease;
+                }
+
+                .option-button:hover {
+                    transform: scale(1.05);
+                    box-shadow: 
+                        inset 0 0 20px rgba(0, 236, 214, 0.5),
+                        0 0 30px rgba(0, 236, 214, 0.5);
+                }
+
+                .option-button:active {
+                    transform: scale(0.98);
+                }
+
+                @keyframes pulse {
+                    0%, 100% {
+                        box-shadow: 
+                            inset 0 0 10px rgba(0, 236, 214, 0.3),
+                            0 0 10px rgba(0, 236, 214, 0.3);
+                    }
+                    50% {
+                        box-shadow: 
+                            inset 0 0 15px rgba(0, 236, 214, 0.5),
+                            0 0 20px rgba(0, 236, 214, 0.5);
+                    }
                 }
 
                 .options-container {
                     display: flex;
                     justify-content: center;
-                    gap: 20px;
-                    margin-top: 20px;
-                }
-
-                .option-button {
-                    padding: 10px 20px;
-                    font-size: 1em;
-                    background-color: #4CAF50;
-                    color: white;
-                    border: none;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-                }
-
-                .option-button:hover {
-                    background-color: #45a049;
+                    gap: 30px;
+                    margin-top: 30px;
                 }
             </style>
 
             <div class="passage-container">
-                <img class="passage-image" src="https://picsum.photos/id/237/200/300" alt="Escena del pasaje">
+                <img class="passage-image" src="assets/images/PS5.png" alt="Escena del pasaje">
                 <div class="passage-text">
                     El recuerdo se desplegó como una flor que no conocía estaciones. Sin permiso. Sin piedad.
 
-Luma ya no flotaba: caía. Pero no en un abismo, sino en un río de imágenes. Sus cipselas se extendían como raíces, absorbiendo emociones ajenas, tiempos rotos.
+                    Luma ya no flotaba: caía. Pero no en un abismo, sino en un río de imágenes. Sus cipselas se extendían como raíces, absorbiendo emociones ajenas, tiempos rotos.
 
-Vio un claro distinto. Más joven. Más vivo.
+                    Vio un claro distinto. Más joven. Más vivo.
 
-La mujer de pétalos estaba allí. Su presencia era luz. Sus risas hacían florecer los árboles. Pero algo en su centro parecía desvanecerse, como si supiera que su tiempo había llegado al borde.
+                    La mujer de pétalos estaba allí. Su presencia era luz. Sus risas hacían florecer los árboles. Pero algo en su centro parecía desvanecerse, como si supiera que su tiempo había llegado al borde.
 
-Y entonces lo vio: una figura más pequeña, de sombra aún incompleta. Umbra. No era oscuro, aún no. Solo un eco de lo que vendría.
+                    Y entonces lo vio: una figura más pequeña, de sombra aún incompleta. Umbra. No era oscuro, aún no. Solo un eco de lo que vendría.
 
-La mujer se arrodilló frente a él.
+                    La mujer se arrodilló frente a él.
 
-—Lo siento —susurró, y sus pétalos comenzaron a caer uno a uno—. No puedo quedarme.
+                    —Lo siento —susurró, y sus pétalos comenzaron a caer uno a uno—. No puedo quedarme.
 
-Umbra alzó la mano, como si pudiera detener la despedida. Pero no había ira en su gesto. Solo una tristeza tan profunda que el bosque entero contuvo el aliento.
+                    Umbra alzó la mano, como si pudiera detener la despedida. Pero no había ira en su gesto. Solo una tristeza tan profunda que el bosque entero contuvo el aliento.
 
-Ella se desvaneció en un remolino de viento y memoria.
+                    Ella se desvaneció en un remolino de viento y memoria.
 
-Y Umbra... no gritó. Solo se quedó quieto, hasta que la sombra empezó a crecer desde sus pies.
+                    Y Umbra... no gritó. Solo se quedó quieto, hasta que la sombra empezó a crecer desde sus pies.
 
-El olvido había nacido.
+                    El olvido había nacido.
 
-Luma despertó con un temblor en sus cipselas. Aún sentía la ausencia. El abandono. La semilla del dolor.
+                    Luma despertó con un temblor en sus cipselas. Aún sentía la ausencia. El abandono. La semilla del dolor.
 
-Y entendió que ser guardiana no era una elección de poder. Era una promesa de presencia.
+                    Y entendió que ser guardiana no era una elección de poder. Era una promesa de presencia.
                 </div>
                 <div class="options-container">
                     <button class="option-button" data-target="El eco de una nueva guardiana">Guardar este recuerdo como el primero de muchos</button>

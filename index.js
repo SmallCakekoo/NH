@@ -50,6 +50,7 @@ import CaminosDeMemoriaPassage from "./pages/CaminosDeMemoriaPassage.js";
 import YEntoncesQuePassoConNiloPassage from "./pages/YEntoncesQuePassoConNiloPassage.js";
 import LaNegacionDeNiloPassage from "./pages/LaNegacionDeNiloPassage.js";
 import FinPassage from "./pages/FinPassage.js";
+import PersonajesPassage from "./pages/PersonajesPassage.js";
 
 customElements.define("inicio-passage", InicioPassage);
 customElements.define("main-page", MainPage);
@@ -137,3 +138,4 @@ customElements.define(
 );
 customElements.define("la-negacion-de-nilo-passage", LaNegacionDeNiloPassage);
 customElements.define("fin-passage", FinPassage);
+customElements.define("personajes-passage", PersonajesPassage);

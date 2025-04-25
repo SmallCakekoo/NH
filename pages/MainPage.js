@@ -14,28 +14,19 @@ class MainPage extends HTMLElement {
       <style>
         :host {
           display: block;
-          font-family: 'Georgia', serif;
-          color: #333;
-          background-color: #f5f5f5;
           padding: 20px;
+          background-image: url('assets/images/Portada.jpg');
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          min-height: 100%;
         }
-        
-        .main-container {
-          max-width: 800px;
-          margin: 0 auto;
-          background-color: #fff;
-          border-radius: 10px;
-          padding: 30px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        h1 {
-          font-size: 2.5em;
-          text-align: center;
-          margin-bottom: 20px;
-          color: #2c3e50;
-        }
-        
+
         .subtitle {
           font-size: 1.2em;
           text-align: center;
@@ -44,59 +35,77 @@ class MainPage extends HTMLElement {
           color: #7f8c8d;
         }
         
-        .story-image {
-          width: 100%;
-          max-height: 400px;
-          object-fit: cover;
-          border-radius: 8px;
-          margin-bottom: 30px;
+        .button-container {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin-top: 85vh;
         }
         
-        .description {
-          font-size: 1.1em;
-          line-height: 1.6;
-          margin-bottom: 30px;
-          text-align: justify;
+        .start-button, .characters-button {
+          display: block;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          border: none;
+          background: none;
+          padding: 0;
         }
         
         .start-button {
-          display: block;
-          width: 200px;
-          padding: 15px;
-          margin: 30px auto 0;
-          font-size: 1.2em;
-          background-color: #2c3e50;
-          color: white;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: all 0.3s ease;
+          width: min(200px, 80%);
         }
         
-        .start-button:hover {
-          background-color: #1a252f;
-          transform: translateY(-3px);
-          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        .characters-button {
+          width: min(220px, 80%);
+        }
+        
+        @media screen and (max-width: 768px) {
+          .button-container {
+            margin-top: 65vh;
+          }
+          
+          .start-button {
+            width: min(150px, 60%);
+          }
+          
+          .characters-button {
+            width: min(150px, 60%);
+          }
+        }
+        
+        @media screen and (max-width: 480px) {
+          .button-container {
+            margin-top: 60vh;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+          }
+          
+          .start-button {
+            width: min(120px, 50%);
+          }
+          
+          .characters-button {
+            width: min(120px, 50%);
+          }
+        }
+        
+        .start-button:hover, .characters-button:hover {
+          transform: scale(1.05);
+          filter: brightness(1.3) drop-shadow(0 0 10px rgba(0, 123, 255, 0.8));
+          transition: all 0.3s ease;
         }
       </style>
       
       <div class="main-container">
-        <h1>Aqua Anima</h1>
-        <p class="subtitle">Un viaje entre el recuerdo y el olvido</p>
-        
-        <img class="story-image" src="https://picsum.photos/id/29/800/400" alt="Bosque misterioso">
-        
-        <div class="description">
-          <p>En un bosque envuelto en magia ancestral, donde los árboles guardan secretos de siglos y las sombras tienen voz propia, una historia espera ser descubierta.</p>
-          
-          <p>Nilo y Luma, dos pequeños seres del bosque, se adentrarán en un viaje que desafiará todo lo que conocen sobre su mundo. A través de claros luminosos y rincones de oscuridad, descubrirán que la memoria del bosque está en peligro.</p>
-          
-          <p>Cada elección que tomes moldeará su destino y podría cambiar para siempre el equilibrio entre la luz y la sombra.</p>
-          
-          <p>¿Estás listo para adentrarte en Aqua Anima?</p>
+        <div class="button-container">
+          <button class="start-button" data-target="Inicio">
+            <img src="assets/images/Comenzar.png" alt="Comenzar Historia" style="width: 100%; height: auto;">
+          </button>
+          <button class="characters-button" data-target="Personajes">
+            <img src="assets/images/Personajes.png" alt="Ver Personajes" style="width: 100%; height: auto;">
+          </button>
         </div>
-        
-        <button class="start-button" data-target="Inicio">Comenzar Historia</button>
       </div>
     `;
   }
@@ -106,6 +115,21 @@ class MainPage extends HTMLElement {
     if (startButton) {
       startButton.addEventListener("click", () => {
         const target = startButton.getAttribute("data-target");
+        this.dispatchEvent(
+          new CustomEvent("passage-change", {
+            detail: { target },
+            bubbles: true,
+            composed: true,
+          })
+        );
+      });
+    }
+
+    const charactersButton =
+      this.shadowRoot.querySelector(".characters-button");
+    if (charactersButton) {
+      charactersButton.addEventListener("click", () => {
+        const target = charactersButton.getAttribute("data-target");
         this.dispatchEvent(
           new CustomEvent("passage-change", {
             detail: { target },

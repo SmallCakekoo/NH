@@ -12,77 +12,136 @@ class FinPassage extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
       <style>
+
         :host {
           display: block;
-          font-family: 'Georgia', serif;
-          color: #333;
-          background-color: #f5f5f5;
           padding: 20px;
         }
-        
-        .fin-container {
+
+        h1 {
+          color: #00ecd6;
+           font-family: var(--font-buttons);
+        }
+
+        .passage-container {
           max-width: 800px;
           margin: 0 auto;
-          background-color: #fff;
-          border-radius: 10px;
-          padding: 30px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           text-align: center;
         }
-        
-        h1 {
-          font-size: 2.5em;
-          margin-bottom: 20px;
-          color: #2c3e50;
-        }
-        
-        .fin-image {
+
+        .passage-image {
           width: 100%;
-          max-height: 400px;
-          object-fit: cover;
+          max-width: 600px;
+          height: auto;
           border-radius: 8px;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
         }
-        
-        .message {
+
+        .passage-text {
           font-size: 1.2em;
           line-height: 1.6;
           margin-bottom: 30px;
+          white-space: pre-line;
+          background-color: #011330;
+          color: #00ecd6;
+          padding: 20px;
+          border: 4px solid #07c0d5;
+          border-image: repeating-linear-gradient(
+            45deg,
+            #07c0d5,
+            #07c0d5 10px,
+            #00ecd6 10px,
+            #00ecd6 20px
+          ) 4;
+          box-shadow: 
+            0 0 0 4px #011330,
+            0 0 0 8px #07c0d5;
+          position: relative;
         }
-        
+
+        .passage-text::before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          right: -2px;
+          bottom: -2px;
+          background: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 236, 214, 0.1) 2px,
+            rgba(0, 236, 214, 0.1) 4px
+          );
+          pointer-events: none;
+        }
+
         .restart-button {
-          display: block;
-          width: 200px;
-          padding: 15px;
-          margin: 30px auto 0;
-          font-size: 1.2em;
-          background-color: #2c3e50;
-          color: white;
+          padding: 15px 30px;
+          font-size: 1.4em;
+          background-image: url('assets/images/FondoBTN.png');
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: #011330;
+          color: #00ecd6;
           border: none;
-          border-radius: 5px;
+          border-radius: 12px;
           cursor: pointer;
-          transition: all 0.3s ease;
+          font-family: var(--font-buttons);
+          text-shadow: 0 0 5px #07c0d5;
+          box-shadow: 
+            inset 0 0 10px rgba(0, 236, 214, 0.3),
+            0 0 10px rgba(0, 236, 214, 0.3);
+          outline: none;
+          min-width: 250px;
+          animation: pulse 2s infinite;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        
+
         .restart-button:hover {
-          background-color: #1a252f;
-          transform: translateY(-3px);
-          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+          transform: scale(1.05);
+          box-shadow: 
+            inset 0 0 20px rgba(0, 236, 214, 0.5),
+            0 0 30px rgba(0, 236, 214, 0.5);
+        }
+
+        .restart-button:active {
+          transform: scale(0.98);
+        }
+
+        @keyframes pulse {
+          0%, 100% {
+            box-shadow: 
+              inset 0 0 10px rgba(0, 236, 214, 0.3),
+              0 0 10px rgba(0, 236, 214, 0.3);
+          }
+          50% {
+            box-shadow: 
+              inset 0 0 15px rgba(0, 236, 214, 0.5),
+              0 0 20px rgba(0, 236, 214, 0.5);
+          }
+        }
+
+        .options-container {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          margin-top: 30px;
         }
       </style>
-      
-      <div class="fin-container">
+
+      <div class="passage-container">
         <h1>Fin del Viaje</h1>
         
-        <img class="fin-image" src="https://picsum.photos/id/15/800/400" alt="Bosque tranquilo">
-        
-        <div class="message">
-          <p>Gracias por acompañar a Nilo y Luma en esta aventura a través de Aqua Anima.</p>
-          <p>Tu viaje ha llegado a su fin, pero las historias del bosque continuarán para siempre.</p>
+        <div class="passage-text">
+          <p>Gracias por acompañar a Nilo en esta aventura a través de Aqua Anima.</p> 
           <p>¿Te gustaría volver al inicio y explorar otros caminos?</p>
         </div>
         
-        <button class="restart-button" data-target="main-page">Volver al Inicio</button>
+        <div class="options-container">
+          <button class="restart-button" data-target="main-page">Volver al Inicio</button>
+        </div>
       </div>
     `;
   }
