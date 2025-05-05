@@ -1,13 +1,551 @@
 {
-  "FIN": {
-    "id": "10",
-    "text": "¡Gracias por jugar Aqua Anima! Esperamos que hayas disfrutado de esta aventura llena de magia, recuerdos y descubrimientos. ¿Te gustaría volver a explorar el bosque y descubrir nuevos caminos?",
-    "image": "https://picsum.photos/id/237/200/300",
-    "options": [
-      {
-        "label": "Volver al inicio",
-        "target": "Inicio"
-      }
-    ]
+  "passages": {
+    "Inicio": {
+      "id": "1",
+      "text": "El rocío de la mañana aún se aferraba a las hojas cuando Nilo seguía enredado en sueños. Su cuerpo diminuto, hecho de bruma y curiosidad, descansaba en la raíz tibia de un ceibo viejo.\n\nFue Luma quien lo despertó, como casi todos los días.\n\n—¡Nilo! ¡Despierta, gotita dormilona! —canturreó, mientras le daba un golpecito suave con una de su cipselas.\n\nNilo murmuró algo ininteligible y rodó hacia un lado, cayendo de su lecho natural con un leve plof. Una hojita quedó pegada en su cara, como un bigote improvisado. Luma soltó una risa breve.\n\n—Siempre igual. Soñando con aventuras y tropezando con la realidad —dijo con dulzura y un toque de picardía.\n\n—No es mi culpa si el mundo se empeña en poner cosas donde piso —respondió él, medio dormido, medio sonriendo mientras se ponía en pie.\n\nElla lo observó un momento más. Había algo entrañable en esa torpeza suya, algo que la hacía quedarse un rato más cada mañana.\n\n—Vamos al bosque. Hay algo raro hoy. . . el aire huele distinto. Y vi una luciérnaga nueva —dijo, señalando una luz a lo lejos.\n\nNilo se desperezó como pudo, dio un salto breve y —casi como era de costumbre— por poco pierde el equilibrio. Afortunadamente, esta vez se mantuvo en pie.\n\n—Perfecto. Ya estoy listo —dijo, sacudiéndose las hojas con dignidad prestada.\n\nY así, juntos, siguieron el sendero que aún no sabían que cambiaría todo.\n\nAquel día no fue distinto. . . hasta que lo fue.\n\nSiguiendo aquella luciérnaga extraña, ambos se desviaron del camino habitual. La niebla se volvió espesa, pero no amenazante. Fue entonces cuando lo encontraron: un claro en el corazón del bosque. El aire allí era distinto, como si los árboles respiraran recuerdos.",
+
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Explorar el bosque",
+          "target": "Claro del Bosque"
+        },
+        {
+          "label": "Dudar antes de seguirla",
+          "target": "Claro del Bosque Dudoso"
+        }
+      ]
+    },
+    "Claro del Bosque": {
+      "id": "2",
+      "text": "Los árboles del claro se alzaban en un silencio profundo, como si llevaran siglos esperando. Sus troncos, anchos y cubiertos de líquenes, parecían escritos con signos antiguos. No palabras humanas, sino símbolos vivos, palpitantes, que se curvaban al ritmo del viento.\n\nAl pisar el suelo mullido, Nilo se detuvo.\n\nSintió un leve temblor, como si el bosque contuviera el aliento. Las hojas crujieron sin romperse. El aire olía a tierra húmeda, a algo viejo. . . y despierto. Una vibración suave le recorrió el cuerpo, desde los pies hasta las puntas vaporosas de su forma.\n\n—¿Escuchas eso? —susurró Luma, apenas visible bajo la bruma dorada.\n\nPero no era un sonido. Era una memoria. No suya. Del bosque.\n\nUna voz sin boca, sin origen claro, susurraba desde todos lados:\n\n“Vendrá un guardián desde el rocío…”\n\nNilo entrecerró los ojos. El claro no solo hablaba. . . lo recordaba.\n\n“Él nos recordará cuando todo se olvide.”\n\nLuma lo miró de reojo, con una chispa de duda y asombro.\n\n—¿Crees que. . . se refiere a ti?\n\nNilo se encogió un poco, como si quisiera hacerse aún más pequeño.\n\n—¿Yo? No, no, imposible. Si fuera yo. . . el bosque estaría en serios problemas. Apenas y logro cruzar la aldea sin enredarme en una raíz.\n\nLuma lo miró de costado, con esa sonrisa que no era burla, sino ternura.\n\n—Quizá eso es justo lo que necesita el bosque: alguien que no lo tenga todo resuelto. Alguien que sepa perderse.\n\nAnte la respuesta de Luma, Nilo abrió la boca para responder, pero no encontró palabras. Aún sentía ese zumbido en el pecho, esa pregunta que siempre había llevado consigo. . . ahora parecía tener eco.\n\nRegresaron a la aldea con la niebla aún pegada a la piel, pero Nilo no pudo olvidarlo. Algo lo llamaba, con la paciencia de las raíces.\n\nY al día siguiente, volvió.\n\nY al otro también.\n\nA veces con Luma y otras veces solo.\n\nHasta que los susurros dejaron de ser murmullos. . .\n\ny empezaron a hablarle por su nombre.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Escuchar los árboles",
+          "target": "Primer Recuerdo"
+        },
+        {
+          "label": "Despertar de golpe",
+          "target": "Un Recuerdo Fragmentado"
+        }
+      ]
+    },
+    "Primer Recuerdo": {
+      "id": "3",
+      "text": "Uno de esos días —no sabría decir cuál— Nilo se quedó dormido bajo un árbol dorado del Claro, cuyas hojas caían tan lento que parecía que el tiempo mismo olvidaba pasar.\n\nLa brisa susurraba cosas que no entendía, y el sol filtrado entre las ramas pintaba figuras en el suelo. Cerró los ojos solo un segundo.\n\nY entonces, lo vio.\n\nNo con los ojos. Con el alma.\n\nEra un recuerdo.\n\nUna mujer de pétalos caminaba entre risas, ligera como el viento que no pide permiso. Sus pasos no hacían ruido, pero el bosque florecía a su paso. No la conocía, y sin embargo... la sentía familiar, como si la hubiera soñado de niño, o como si su risa hubiera quedado atrapada en alguna hoja que ahora se deshacía.\n\nEl aire cambió. Los árboles vibraron con una calma que solo los siglos saben tener.\n\n“Tú ves porque has sido elegido,” susurraron, no con voz, sino con certeza.\n\nNilo se incorporó lentamente, el corazón lleno de algo que no sabía nombrar. No miedo. No alegría. Algo más vasto. Como si una puerta se hubiera abierto adentro.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Aceptar la conexión",
+          "target": "Vínculo con el Claro"
+        },
+        {
+          "label": "Dudar del recuerdo",
+          "target": "Eco Irreal"
+        }
+      ]
+    },
+    "Vínculo con el Claro": {
+      "id": "4",
+      "text": "Con cada visita, el Claro parecía menos un lugar y más una presencia. Los árboles ya no solo susurraban... a veces, parecía que esperaban a Nilo.\n\nPero entonces, algo cambió.\n\nEl brillo suave que flotaba entre las ramas comenzó a apagarse. Las hojas, antes doradas, caían sin viento. Y aunque no era otoño, el suelo se cubría de ausencias.\n\nUna mañana, el aire llegó más denso. Al tocar el tronco del árbol dorado, Nilo sintió un escalofrío. Un murmullo recorrió el bosque como una brisa enferma:\n\n“Umbra...”\n\nEl nombre no sonaba como un aviso. Sonaba como un recuerdo que dolía.\n\n—¿Quién es Umbra? —preguntó en voz alta, aunque sabía que el bosque rara vez respondía con claridad.\n\nPero esa vez, lo hizo.\n\nLos ancianos árboles hablaron. Sus voces eran lentas, como raíces moviéndose bajo tierra.\n\n“Umbra fue uno de nosotros. Un guardián de memoria.”\n\n“Pero nunca germinó del todo. Era solo una semilla... a la que nunca le dio el sol.”\n\n“Mientras otros crecíamos al calor del recuerdo, él quedó en la sombra. Olvidado antes de florecer.”\n\n“Desde entonces, se alimenta del olvido. Y lo que no se nombra... lo convierte en sombra.”\n\nNilo sintió que algo se apretaba dentro de sí. No era miedo. Era algo más viejo. Más profundo. Como si una parte de él ya supiera esta historia… pero la hubiera olvidado.\n\nEl zumbido en su pecho seguía allí, más fuerte.\n\nYa no era una pregunta.\n\nEra un llamado.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Investigar lo que ocurre",
+          "target": "Hablan de Umbra"
+        }
+      ]
+    },
+    "Hablan de Umbra": {
+      "id": "5",
+      "text": "Umbra no era un monstruo.\nNo era sombra, ni enemigo.\n\nEra una semilla que nunca floreció,\nretorcida y negra,\npalpitando de pena bajo tierra húmeda.\n\nCuando Nilo lo vio por primera vez, no lo vio con los ojos.\nLo sintió, como se siente el temblor antes del llanto.\n\n—No quiero olvidar... —susurró Umbra en el recuerdo que ahora veía Nilo— pero no sé recordar.\n\nNo fue el miedo lo que brotó en Nilo. Fue compasión.\nUn dolor ajeno que, de algún modo, también era suyo.\n\nLos árboles temblaron. Las ramas se crisparon.\nSus voces, antes suaves, ahora eran firmes:\n\n“Si lo tocas... te perderás también. Nadie ha logrado ayudarlo.”\n\nNilo cerró los ojos. El zumbido en su pecho se convirtió en latido.\nSabía que algunas memorias no quieren ser salvadas... pero merecen ser escuchadas.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Conocer a Umbra",
+          "target": "Encuentro con Umbra"
+        }
+      ]
+    },
+    "Encuentro con Umbra": {
+      "id": "6",
+      "text": "La noticia llegó con la bruma.\nNilo regresó a la aldea y se subió a la piedra del centro de la plaza, justo donde a veces los ancianos contaban historias antiguas. Pero hoy no traía cuentos. Traía advertencias.\n\n—El Claro se está marchitando... —dijo con voz temblorosa—. Las raíces se están secando, y la niebla ya no es memoria: es olvido. Si no hacemos algo, el bosque entero lo va a sentir. Incluida nuestra aldea.\n\nEl murmullo de los habitantes fue inmediato, como un viento inquieto:\n\n—¿Cómo puedes saber eso? ¡Eres solo una gota! —dijo un viejo hongo desde el borde de la plaza.\n—Quizás solo es parte del ciclo. El bosque siempre cambia —murmuró una semilla anciana, mirando al cielo.\n—¿Y si está diciendo la verdad? ¡¿Y si el olvido se extiende?! —gritó un joven espino, más asustado que convencido.\n—¡Entonces que vaya él! Si el Claro lo eligió, que él lo arregle —soltó una voz entre la multitud, con tono entre cínico y resignado.\n\nNilo apretó los puños. No buscaba gloria, ni culpa. Solo quería que escucharan. Pero una a una, las figuras se dispersaron como niebla al viento, con más dudas que respuestas.\n\nTodos se fueron.\nTodos, menos una.\n\nLuma seguía ahí. No necesitó entender todo.\nSolo vio el rostro de Nilo, y supo que no podía dejarlo ir solo.\n\n—Si tú crees que se puede... entonces vamos a intentarlo. —dijo, acercándose sin miedo.\n\nY así, bajo un cielo sin estrellas, Nilo durmió por última vez entre la hierba del Claro.\nLa niebla lo envolvía como una despedida suave.\n\nAl día siguiente, solo quedaría una elección de no retorno.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Buscar respuestas",
+          "target": "Deterioro en la aldea"
+        }
+      ]
+    },
+    "Deterioro en la aldea": {
+      "id": "7",
+      "text": "Con el paso de los días, Nilo hizo todo lo posible para guardar los recuerdos de la gente del bosque en su memoria, pues el deterioro del Claro ya no era un rumor.\nEra real. Y había llegado a la aldea.\n\nLas hojas de los árboles se marchitaban antes de caer. Las flores olvidaban cómo abrirse. Y lo más extraño: los recuerdos de los aldeanos empezaron a cambiar.\n\nNo desaparecían. Se torcían.\nRisas se volvían llanto. Nombres se perdían. Momentos felices se convertían en sombras que no querían ser tocadas.\n\nNilo lo sentía todo.\nCada fragmento de memoria distorsionada lo alcanzaba como si fuera suyo. Como si el bosque ya no pudiera contener su propio dolor… y lo estuviera dejando caer sobre él.\n\nY Nilo los absorbía. Porque no sabía no hacerlo.\n\nSe desgastaba.\nSe desdibujaba.\nA ratos su forma era niebla, a ratos silencio.\nComo si el olvido también lo reclamara a él.\n\nPero aún quedaba algo.\nUna elección.\nUna última decisión.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Ir en busca de Umbra",
+          "target": "En busca de Umbra"
+        }
+      ]
+    },
+    "En busca de Umbra": {
+      "id": "8",
+      "text": "Y así fue como Nilo empezó.\nNo empacó nada. Solo salió de la aldea y caminó, siguiendo donde su corazón le dictaba.\n\nEl bosque ya no susurraba. Todo era crujir seco y raíces partidas.\nLos hongos cubrían los troncos como costras vivas, respirando un silencio denso, expectante.\n\nNilo avanzaba con dificultad, rodeado por niebla morada y ramas que parecían cerrarse tras su paso.\n\nNo había camino. Solo intuición.\n\nLos hongos, aliados de Umbra, no hablaban con palabras.\nPero se apartaban, uno a uno, reconociendo algo en Nilo.\nTal vez su decisión.\nTal vez su final.\n\nY entonces lo vio.\n\nAllí, entre raíces abiertas como costillas viejas, estaba Umbra.\nYa no era solo una semilla.\nEra más grande, más oscura.\nPalpitaba como un corazón herido y quieto.\n\nPero no era el monstruo que algunos aldeanos temían.\nEra solo... olvido.\n\nNilo dio un paso, pero aún dudaba.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Acercarse",
+          "target": "Último encuentro"
+        },
+        {
+          "label": "Huir",
+          "target": "El Eco de la Aldea"
+        },
+        {
+          "label": "Luchar",
+          "target": "El Combate de los Recuerdos"
+        }
+      ]
+    },
+    "Epílogo": {
+      "id": "9",
+      "text": "Nilo no volvió a la aldea.\nSe desvaneció al tocar a Umbra, como una gota que se entrega al río.\n\nNo hubo despedidas.\nSolo silencio.\nY luego… rocío.\n\nDesde entonces, cada mañana cae una niebla suave sobre el Claro.\nUna bruma que refresca, que limpia, que recuerda.\nLas hojas perdidas reverdecen.\nLas memorias rotas se reconstruyen, poco a poco.\n\nLuma lo recuerda.\nLo cuenta en la plaza, bajo el árbol viejo.\nA los niños. A los hongos que ahora son libres. A quien quiera escuchar.\n\nY así, Nilo sigue aquí.\nNo como un héroe.\nSino como lo que siempre fue:\n\nEl Guardián del Rocío.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "FIN",
+          "target": "FIN"
+        }
+      ]
+    },
+    "FIN": {
+      "id": "10",
+      "text": "¡Gracias por jugar Aqua Anima! Esperamos que hayas disfrutado de esta aventura llena de magia, recuerdos y descubrimientos. ¿Te gustaría volver a explorar el bosque y descubrir nuevos caminos?",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Volver al inicio",
+          "target": "Inicio"
+        }
+      ]
+    },
+    "Último encuentro": {
+      "id": "11",
+      "text": "Nilo no tuvo que decir nada.\nUmbra ya lo sabía.\n\nLa presencia del pequeño guardián le erizaba las raíces, como si algo antiguo —algo que había aprendido a callar— volviera a la superficie.\n\n—¿Por qué has venido? —murmuró Umbra, su voz temblaba, profunda, como si hablara a través del mismo suelo.\n\n—Porque nadie merece desaparecer sin ser recordado, pero necesito que te detengas —respondió Nilo.\n\nEl silencio se volvió espeso.\nNi los hongos se movían.\nEl bosque entero parecía esperar una confesión.\n\n—Yo no quería hacer daño. . .—susurró Umbra— pero tenía tanto miedo de desaparecer.\nAsí que tomé. Tomé todo lo que pude.\nMemorias cálidas. Canciones. Risas. Hasta los nombres de los árboles.\nLas bebí.\nY en su lugar. . . dejé sombra.\n\nLa tierra crujió. Los hongos temblaron levemente, como si revivieran el dolor.\nEra cierto.\nUmbra había marchitado el bosque. No por odio. Más bien, por hambre. Por vacío.\n\n—Si me tocas. . . te arrastraré conmigo. No podré evitarlo. Corromperé lo que queda de ti.\n\nNilo bajó la mirada, no con miedo.\nCon compasión. Y firmeza.\n\n—No todo se perderá.\n\nUmbra titubeó.\nPor primera vez, no por culpa ni rencor…\nSino por duda. Por un deseo de ser otra cosa.\n\nY entonces… ocurrió.\n\nUn recuerdo emergió.\nPero no de Umbra.\n\nEra de Nilo.\n\nUn destello de sol.\nLuma, con los ojos cerrados, recibiendo una gota brillante.\nUna memoria. Varias memorias, eran todas las memorias de la gente que Nilo alguna vez había cuidado.\n\n—¿Qué has hecho? —susurró Umbra, confundido.\n\n—He hecho espacio —respondió Nilo.\n\nY dio un paso más.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Unirse a Umbra",
+          "target": "Epílogo"
+        }
+      ]
+    },
+    "Claro del Bosque Dudoso": {
+      "id": "12",
+      "text": "Los árboles del claro se alzaban en un silencio tenso, como si hubieran detenido su respiración apenas lo vieron llegar. Sus troncos, anchos y cubiertos de líquenes, parecían ocultar más de lo que mostraban. No eran signos vivos. Eran cicatrices.\n\nNilo dio un paso, y el suelo mullido no tembló. Se hundió apenas, como si no quisiera sostenerlo.\n\nEl aire olía a algo estancado, no muerto, pero dormido durante demasiado tiempo. El bosque no lo llamaba. Lo observaba.\n\n—¿Sientes eso? —murmuró Luma, esta vez más cerca, casi tocándolo, como si temiera que él se desvaneciera.\n\nNo había susurros. Solo una sensación. Como si alguien estuviera decidiendo si él debía estar ahí.\n\nY entonces, una voz muy lejana, apenas audible entre los líquenes, dijo:\n\n“Vendrá un guardián. . .”\n\nPero se apagó. No terminó la frase.\n\nNilo sintió frío, a pesar del sol filtrado.\n\n—¿Crees que. . . se refiere a ti? —preguntó Luma, sin la misma chispa, con una preocupación disimulada.\n\n—No lo sé —respondió Nilo, sin excusas, sin chistes. Algo dentro de él se agitaba, pero no sabía si era miedo o vergüenza.\n\nEl claro no habló más. El silencio no era cálido. Era expectante.\n\nY aun así, algo lo llamaba.\n\nVolvieron a la aldea en silencio. Pero esa noche Nilo no durmió.\n\nY al día siguiente, volvió.\n\nY al otro también.\n\nAunque el bosque no lo esperaba.\n\nHasta que un día, lo llamó por su nombre.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Escuchar los árboles",
+          "target": "Primer Recuerdo"
+        },
+        {
+          "label": "Despertar de golpe",
+          "target": "Un Recuerdo Fragmentado"
+        }
+      ]
+    },
+    "Un Recuerdo Fragmentado": {
+      "id": "13",
+      "text": "Uno de esos días —no sabría decir cuál— Nilo se quedó dormido bajo un árbol dorado del Claro.\nEl viento lo mecía con suavidad, pero en su sueño no encontró paz.\n\nCerró los ojos. Y algo apareció.\n\nUna figura lejana, hecha de pétalos y niebla, surgió entre la bruma del sueño.\nSus bordes titilaban, como si la memoria que la contenía estuviera incompleta.\nA veces reía. A veces lloraba. A veces florecía. A veces se apagaba.\n\nNilo quiso acercarse. Quiso hablar. Pero sus pensamientos se deshicieron como rocío al sol.\nTodo se movía sin forma ni sentido, como si él no estuviera del todo invitado a ese recuerdo.\n\nLas voces del bosque susurraron entrecortadas:\n\n“Tú. . . ves. . . elegido. . . o no. . . aún no. . .”\n\nSe despertó de golpe, con el corazón apretado y la mente empañada.\n¿Había soñado con alguien del bosque? ¿O había tocado una memoria que no le pertenecía?\n\nSe miró las manos. ¿Seguía siendo él?\n\nLuma lo encontró más tarde, sentado solo bajo el árbol.\n\n—¿Estás bien?\n\nNilo no respondió de inmediato.\n\n—Creo que el bosque. . . no me reconoce del todo.\n\nNo fue un rechazo.\nPero tampoco una bienvenida.\nDespués de eso se fue.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Intentar comprender lo que vio",
+          "target": "Raíz Incierta"
+        }
+      ]
+    },
+    "Raíz Incierta": {
+      "id": "14",
+      "text": "Al día siguiente, Nilo volvió al claro.\n\nNo había dormido bien. El recuerdo —o el sueño— seguía aferrado a su mente como una espina suave, que no dolía pero no lo dejaba en paz.\n\nEl árbol bajo el que se había quedado dormido seguía allí, dorado y silencioso. Pero algo había cambiado. No en el árbol. En él.\n\nSe sentó con las piernas cruzadas, como había visto hacer a los sabios de la aldea. Cerró los ojos. Respiró lento.\n\n—¿Qué quieres mostrarme? —susurró.\n\nNada.\n\nEl viento pasó, ignorante. Las hojas cayeron sin apuro. Y sin embargo… había algo. Un murmullo apenas audible. Como si el claro susurrara, pero no a él.\n\n“Recuerda. . . quién fuiste antes de preguntar. . .”\n\nNilo abrió los ojos de golpe. ¿Antes de qué? ¿Qué quería decir eso?\n\n—¿Antes de preguntar? ¿Qué significa? —dijo en voz alta, esta vez sin temor a romper el silencio.\n\nLuma apareció entre la niebla, como si la hubiera llamado con el pensamiento.\n\n—¿Otra vez hablando solo?\n\n—No estoy solo —respondió Nilo, más seguro de lo que esperaba—. Solo que el bosque. . . aún no está seguro de que yo sea yo.\n\nLuma se sentó a su lado. No dijo nada por un rato. Luego, con la voz más tranquila que nunca:\n\n—Entonces tal vez no tienes que convencer al bosque. Tienes que recordarte a ti.\n\nNilo la miró. Y por primera vez, pensó que quizá la respuesta no estaba en los árboles. Sino en sus raíces.\n\nLas suyas.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Buscar en su historia",
+          "target": "Caminos de Memoria"
+        }
+      ]
+    },
+    "Eco Irreal": {
+      "id": "15",
+      "text": "—No era mío.\n\nNilo se incorporó, el pecho agitado, como si acabara de despertar de un sueño que no le pertenecía.\nSus ojos seguían clavados en el aire donde segundos antes danzaba la imagen de la mujer de pétalos.\n\n—Yo no. . . yo no la conozco.\n\nLuma flotaba cerca, en silencio. Sus cipselas titilaban con una luz tenue, reflejando aún los últimos rastros del recuerdo.\nTambién ella lo había visto.\nY aunque no entendía del todo lo que era, había sentido algo. Una cercanía inexplicable. Una nostalgia nueva.\n\n—¿Quién era? —preguntó, apenas rozando el sonido.\n\nNilo negó con la cabeza.\n\n—No importa. Seguro fue un eco viejo. . . de alguien más. Alguna sombra del Claro.\nUna ilusión.\n\nPero su voz no convencía a nadie. Ni a él mismo.\n\n—¿Y si no? —dijo Luma, casi sin atreverse.\n\nNilo se volvió hacia ella, con los labios apretados.\n\n—¿Y si sí? ¿Qué esperas que haga? ¿Perseguir a una mujer hecha de pétalos que solo existe en la bruma de un sueño? ¿Decidir que soy parte de algo que ni siquiera entiendo?\n\nLuma no respondió.\nUna de sus cipselas se soltó sin que ella lo notara, y comenzó a flotar suavemente frente a Nilo.\nEn ella, la imagen volvió a brillar.\nLa mujer entre risas. El bosque floreciendo a su paso. Una risa que acariciaba los márgenes del olvido.\n\nNilo dio un paso atrás.\n\n—No. No quiero saber. No quiero ver más recuerdos.\n\nSe dio media vuelta, como si pudiera sacudirse la imagen con el viento.\n\n—Los recuerdos nublan. Yo necesito claridad. Y esto… esto me hace sentir perdido.\n\nEl claro guardó silencio. Hasta las hojas dejaron de caer por un instante.\n\nLuma descendió despacio. Observó la cipsela danzante. La tomó.\n\nY por primera vez, no la dejó ir.\n\n—Si tú no los quieres. . .—dijo en voz baja, con una firmeza que nunca antes había sentido en su centro—. . ..yo los guardaré.\n\nSus demás cipselas comenzaron a encenderse, una a una.\nNo con fuego.\nCon memoria.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Escuchar cómo el Claro responde a Luma",
+          "target": "El susurro de los siglos"
+        },
+        {
+          "label": "Seguir a Nilo en su huida del recuerdo",
+          "target": "La negación de Nilo"
+        }
+      ]
+    },
+    "Caminos de Memoria": {
+      "id": "16",
+      "text": "La idea no lo dejó en paz.\n\nEsa noche, Nilo se sentó frente al fuego con los ojos clavados en las llamas. Las sombras danzaban en las paredes como fragmentos de recuerdos que aún no se dejaban atrapar.\n\n—¿Quién fui antes de preguntar?\n\nLas palabras le pesaban. No porque fueran tristes, sino porque eran largas, como raíces hundidas en una tierra que no había pisado en años.\n\nAl amanecer, antes de que la bruma se levantara, caminó hasta el borde del claro y giró en dirección opuesta. No hacia el corazón del bosque, sino hacia la aldea.\n\nHacía mucho que no volvía a ese sitio.\n\nPasó entre las casas aún dormidas. Nadie lo detuvo. Nadie lo vio.\n\nY allí, detrás de la colina, estaba.\n\nLa vieja choza donde había vivido con su madre niebla, antes de que la niebla lo llevara lejos, antes de saber que el bosque hablaba.\n\nEl lugar estaba abandonado. Cubierto de musgo y flores silvestres. Pero dentro. . . algo permanecía.\n\nUn cuaderno de hojas secas. Dibujos de árboles con rostros. Notas que no entendía del todo, pero que hablaban de la memoria de las cosas. De cómo algunas semillas nacen recordando.\n\nEn una de las páginas, un símbolo familiar. Uno que había visto en el claro. Uno que se le había clavado en el pecho como un eco.\n\n—Mi madre. . . ¿sabía?\n\nY entonces lo recordó. Una canción. No una letra. Una vibración. Algo que ella cantaba cuando él tenía miedo.\n\n“Si escuchás lo que crece, vas a saber quién sos.”\n\nNilo salió de la choza con el cuaderno apretado contra el pecho.\n\nNo tenía todas las respuestas. Pero ahora tenía un mapa.\n\nY el bosque. . . lo estaba esperando.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Regresar al Claro con nuevas preguntas",
+          "target": "Llamado Verdadero"
+        }
+      ]
+    },
+    "Llamado Verdadero": {
+      "id": "17",
+      "text": "En su camino de vuelta al Claro, el bosque no era el mismo.\n\nNo porque hubiera cambiado —aunque sí— sino porque Nilo lo miraba diferente. Como si cada hoja, cada raíz, fuera parte de una historia que estaba empezando a recordar. O a imaginar.\n\nPero esa mañana, el claro no le habló.\nLe señaló.\n\nUn sendero que no había estado antes.\nO que tal vez siempre estuvo ahí, esperando que lo mereciera.\n\nLo siguió.\n\nY al final del camino, encontró una hondonada. Silencio absoluto. Árboles jóvenes, torcidos, como si hubieran crecido a tientas. Y en el centro. . . una figura pequeña. Aún no del todo formada. Negra, brillante, acurrucada.\n\nNilo se acercó, con el cuaderno contra el pecho. El ser levantó la mirada. No tenía rostro, pero algo en su gesto era puro desamparo.\n\n—¿Estás solo?\n\nNo hubo respuesta. Solo una vibración leve. Triste. Como un recuerdo que aún no tenía forma.\n\nNilo se sentó junto a él. Sin tocarlo. Sin hablar más.\n\nSe quedaron así por horas.\n\nY antes de irse, Nilo arrancó una hoja de su cuaderno y dibujó el símbolo que había encontrado. Lo dejó a su lado.\n\n—Por si también estás buscando quién eres.\n\nEl ser no respondió. Pero algo en el suelo brotó. Una flor que no debería haber nacido allí.\n\nY cuando Nilo se alejó, no supo que había plantado una memoria.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Ignorarlo por miedo y seguir",
+          "target": "Sombras que no vimos"
+        },
+        {
+          "label": "Recordar ese encuentro más adelante",
+          "target": "Ecos en la Sombra"
+        },
+        {
+          "label": "Volver a buscarlo otro día",
+          "target": "El Nido de Umbra"
+        }
+      ]
+    },
+    "Ecos en la Sombra": {
+      "id": "18",
+      "text": "Nilo no dijo nada. El recuerdo de la sombra seguía vibrando en su interior.\n\nSe alejó del claro sin mirar atrás. No por miedo, sino por respeto. No todos los encuentros necesitan respuesta inmediata. Algunos germinan en silencio.\n\nDías después, mientras ayudaba a Luma a construir un nido para unos pájaros de luz, el eco volvió.\n\nLa figura torcida. Los no-ojos. La tristeza como niebla.\n\n—¿Qué harías si alguien olvida quién fue? —preguntó de la nada, mirando una piedra como si fuera sabia.\n\nLuma parpadeó. Lo miró como quien intenta descifrar si es una pregunta profunda o el inicio de una broma.\n\nNo respondió. Pero uno de los pájaros pareció asentir con la cabeza.\n\nNilo, aunque no lo sabía, ya estaba recordando por los dos. O al menos eso le gustaba creer. Porque la alternativa era aceptar que hablaba solo.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Ir al Bosque Marchito",
+          "target": "Tierra de Olvidos"
+        }
+      ]
+    },
+    "El Nido de Umbra": {
+      "id": "19",
+      "text": "El borde del bosque seco seguía allí, quieto y callado. Nilo dio un paso, luego otro... y se detuvo. Algo le dijo que aún no era el momento.\n\n—Te encontraré. Pero cuando pueda verte sin miedo —susurró, casi como una promesa.\n\nDurante los días siguientes, volvió al mismo lugar. A veces solo. A veces con preguntas. Nunca con respuestas. Cada visita era distinta: la niebla cambiaba de forma, el suelo crujía diferente, y un zumbido lo seguía, como si alguien intentara recordarlo. Pero siempre iba a pasar tiempo con umbra hasta que un día desapareció.\n\nNilo nunca perdió la esperanza, así que siguió llendo.\n\nUna tarde, entre las ramas muertas, vio un destello. No era luz. Era un ojo. Observándolo. Esperándolo.\n\nNilo tragó saliva y avanzó un paso más.\n\n—Estoy aquí. ¿Tú también lo estás?\n\nY el bosque tembló suavemente. Como si dijera que sí.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Seguir el destello",
+          "target": "Sombras Antiguas"
+        }
+      ]
+    },
+    "Sombras que no vimos": {
+      "id": "20",
+      "text": "Nilo no volvió, ni siquiera aventó la mirada. El recuerdo temblaba detrás de él como un hilo de luz a punto de apagarse, pero no se atrevió a tocarlo. Algo en su interior gritaba que no estaba listo así que decidió olvidar.\n\nEn los siguientes días el claro se volvió más callado. Menos claro. Las hojas que antes susurraban ahora parecían guardar silencio. Y aunque Luma siempre estaba a su lado, incluso su voz sonaba lejana.\n\nPasaron días muchos más días.\n\nLuego semanas.\n\nEl bosque ya no murmuraba su nombre.\n\nNilo se lanzó de cabeza a las tareas del día: ayudar en la aldea, limpiar el pozo, llevar mensajes entre ramas. Todo menos pensar. Todo menos volver. Pero en las noches, soñaba con pétalos que no terminaban de abrirse, y con sombras que se estiraban buscando algo perdido.\n\nUna tarde, bajo el peso de esa duda que no se nombra, decidió volver al Claro.\n\nEl lugar lo recibió con una niebla espesa, como si no lo reconociera. O como si lo reconociera demasiado bien.\n\nAllí, entre los árboles más antiguos, escuchó por fin una voz. No una que viniera de fuera, sino de muy hondo. Una voz que no preguntaba, que afirmaba:\n\n<i>“Hay otra presencia. No como tú, pero cercana. Una raíz sin guía. Un brote olvidado. Su nombre es Umbra.”</i>\n\nNilo sintió que el bosque entero le hablaba. Y también, que lo juzgaba con dulzura, Pues a pesar de no estar disponible para atender el bosque se había dedicado a cuidar a su aldea.\n\n—¿Por qué ahora? —preguntó en voz baja.\n\n<i>“Porque ahora... estás listo para recordar lo que decidiste olvidar y enfrentar a quien le decidiste temer.”</i>",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Seguir la voz de los árboles",
+          "target": "Raíz de Sombra"
+        }
+      ]
+    },
+    "Tierra de Olvidos": {
+      "id": "21",
+      "text": "El Bosque Marchito seguía oliendo a polvo antiguo y melancolía rancia.\n\nNilo no sabía por qué había vuelto. Solo... lo sintió. Como si algo pequeño lo llamara sin palabras.\n\nY ahí estaba.\n\nLa sombra. Pequeña. Enredada en una flor que crecía al revés, intentando usar el símbolo que él le había dejado como cuchara para alimentar a un hongo.\n\n—¿Tú otra vez? —murmuró. La sombra se cayó de espaldas... y floreció.\n\nLiteralmente: una flor azul le brotó de la cabeza y luego se escondió con un plop tímido.\n\nSe miraron. La criatura lo señaló.\n\n—¿Amigo?\n\nNilo no respondió de inmediato. Solo se sentó cerca, sacó su cuaderno, y apuntó algo.\n\n—No recuerdas quién eras... tal vez podamos inventarlo.\n\nLa sombra tocó el cuaderno. Estornudó pétalos.\n\n—Primero, deja de comerte las piedras —dijo Nilo. La sombra se tragó otra.\n\nÉl suspiró. Y sonrió.\n\nY en algún rincón del bosque, algo volvió a brotar.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Enseñar cosas básicas",
+          "target": "Lecciones para una sombra"
+        }
+      ]
+    },
+    "Sombras Antiguas": {
+      "id": "22",
+      "text": "El destello no fue un error.\n\nLo supo cuando volvió al claro. No al mismo punto exacto, pero sí al mismo silencio. Una neblina espesa dormía entre los troncos, y los rayos de luz parecían esquivarla.\n\nNilo se adentró despacio, como si cada paso tocara una fibra antigua. No hubo voces. No hubo viento. Solo ese murmullo grave del bosque, como si recordara algo que aún no estaba listo para contar.\n\nY entonces lo sintió.\n\nNo una presencia. Una ausencia.\nUn hueco. Un espacio donde algo alguna vez fue.\n\nSe inclinó sobre una raíz quemada. No por fuego, sino por tiempo. Como si la memoria misma se hubiese marchitado ahí.\n\n—¿Quién eres? —murmuró al vacío.\n\nNada respondió. Pero al tocar la raíz, un escalofrío le recorrió el cuerpo, y su mente se llenó de imágenes que no eran suyas. Guerras invisibles. Flores que lloraban. Y una sombra que miraba desde lejos, esperando ser recordada.\n\nAl volver en sí, Nilo temblaba. No de miedo. De certeza.\n\nEso que había visto... eso que había elegido ignorar, estaba perdiéndose.\n\nY si no hacía algo, se lo llevaría todo.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Hablar con los sabios del bosque",
+          "target": "Consejo de Corteza"
+        }
+      ]
+    },
+    "Raíz de Sombra": {
+      "id": "23",
+      "text": "El nombre retumbó en su pecho como una campana antigua: Umbra.\n\nNo sabía quién era. Ni qué quería. Solo sabía que no lo había visto... porque decidió no verlo.\n\nLos días siguientes fueron un desfile de silencios. Nilo recorría el Claro como si buscara algo que había estado ahí y ya no. Las flores tardaban más en abrir. Las mariposas que antes bailaban cerca del arroyo ahora evitaban el viento. La tierra, antes húmeda y fértil, se agrietaba bajo sus pies. Incluso Luma notó que algo estaba cambiando, aunque no dijera nada.\n\nEn la aldea, los cambios eran imposibles de ignorar. La anciana Mina ya no recordaba las canciones que había cantado toda su vida. Los niños olvidaban los nombres de los árboles que sus padres les habían enseñado. Y el viejo Tero, el mejor tejedor de cestas, miraba sus propias manos como si fueran ajenas, incapaz de recordar patrones que dominaba desde joven.\n\n—Es como si la memoria se escurriera entre los dedos —dijo alguien en el mercado, mientras intentaba recordar para qué había venido.\n\nNilo lo entendió entonces. El olvido se extendía desde el Claro hasta la aldea, marchitando no solo las plantas sino también los recuerdos. Y con cada memoria perdida, la tierra se secaba un poco más.\n\nUna noche, mientras todos dormían, Nilo se acercó al árbol dorado y apoyó la frente contra su corteza.\n\n—No supe qué hacer —susurró—. Tenía miedo. A veces todavía lo tengo.\n\nLa corteza no respondió, pero el suelo tembló suavemente, como si el bosque entero respirara con él.\n\nEntonces lo entendió. No se trataba solo de él.\n\nEl olvido no era suyo. Era del bosque. Era de Umbra, aquella criatura abandonada que crecía alimentándose de memorias. Y si no hacía nada, crecería como maleza sobre todo lo que amaba.\n\nAl amanecer, caminó sin detenerse hasta la aldea. Tenía que decirlo. Aunque no supiera cómo. Aunque nadie le creyera.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Advertir a la aldea",
+          "target": "Encuentro con Umbra"
+        }
+      ]
+    },
+    "Consejo de Corteza": {
+      "id": "24",
+      "text": "No cualquiera puede llamar al Consejo.\n\nPero Nilo no llamó. El bosque lo oyó llegar.\n\nA medida que avanzaba, las raíces se apartaban como si lo reconocieran. Las hojas caían más lentas. El aire se espesaba de historia.\n\nAl centro del Claro Ancestral, los árboles más viejos lo esperaban. Algunos no hablaban desde hacía siglos. Otros solo lo hacían en los sueños de quienes aún recordaban cómo escuchar.\n\nNilo se arrodilló sin saber si debía hablar. No hizo falta.\n\nUno de los árboles, el de corteza negra con vetas azuladas, dejó caer una flor seca.\n\n<i>“Lo que viste no es un error.”</i>\n\n—¿Quién era? —preguntó Nilo, con la voz pequeña, como si pudiera romper algo solo por nombrarlo.\n\n<i>“Umbra.”</i>\n\nUn temblor recorrió las ramas. No de viento. De reconocimiento.\n\n<i>“Fue semilla. Fue luz. Luego, sombra.”</i>\n\n—¿Y ahora?\n\nSilencio.\n\nLuego, otro árbol —uno que parecía tallado por el tiempo mismo— dejó caer un fruto seco, que se abrió en el suelo con un crujido hueco.\n\n<i>“Ahora... es olvido. Pero no del todo.”</i>\n\nNilo sintió que una historia entera se desplegaba en su mente. Una que aún no podía comprender del todo. Pero una frase se clavó en su interior:\n\n<i>“Lo que no se recuerda, se repite.”</i>\n\nSabía lo que tenía que hacer.\n\nNo luchar. No huir. No juzgar.\n\nRecordar.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Buscarlo en la zona marchita",
+          "target": "Eco de Umbra"
+        }
+      ]
+    },
+    "Eco de Umbra": {
+      "id": "25",
+      "text": "Volver al lugar donde lo vio por primera vez fue como entrar a una herida abierta del bosque.\nTodo estaba marchito. No muerto. Peor: olvidado.\nLas hojas no crujían, los aromas no existían. El tiempo allí no pasaba... o no llegaba.\n\nNilo caminó entre ramas secas, musgo gris, y raíces que ya no sabían a dónde ir.\nEl aire tenía un peso que no era físico.\n\nY entonces, un murmullo.\n\nNo palabras. No viento.\n\nUn eco.\n\nComo si alguien respirara recuerdos.\n\nNilo avanzó sin miedo. Ya no podía fingir que no lo había visto. Ya no podía hacer como si no lo sintiera.\nY allí estaba.\n\nUmbra.\nNo en forma completa. No del todo. Una silueta difusa entre lo que fue y lo que quiso ser.\n\n—No vine a pelear —dijo Nilo, su voz temblando solo un poco.\n\nUmbra no respondió, pero su sombra tembló, como si dudara entre alzarse o apagarse.\n\n—Quiero entender. Solo eso.\n\nUn destello atravesó la figura.\nImágenes sin orden: risas, fuego, pétalos cayendo, una lluvia negra, un árbol llorando savia oscura.\n\nY una sensación: abandono.\n\nUmbra se desvaneció con un suspiro que no era aire, sino memoria escapando.\n\nPero Nilo ya había recibido lo necesario.\n\nUna promesa muda quedó entre los troncos secos.\n\n<i>“Nos volveremos a ver… cuando estés listo para recordarlo todo.”</i>",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Prepararse para el reencuentro final",
+          "target": "Antes del Alba"
+        }
+      ]
+    },
+    "Antes del Alba": {
+      "id": "26",
+      "text": "La noche anterior fue extraña.\nNo por la luna —que esta vez no salió—, ni por la brisa —que se quedó quieta—.\nFue extraña porque el bosque parecía... esperar.\n\nNilo también.\n\nNo durmió.\n\nSentado junto a Luma, talló con una piedra sobre una corteza caída. No un símbolo mágico. Solo un círculo.\nUna forma sin inicio ni final.\n\n—¿Crees que lo vas a lograr? —preguntó Luma, con tono suave, como si tuviera miedo de romper algo frágil.\n\nNilo no respondió de inmediato.\nEstaba cansado. Pero no del cuerpo.\n\n—No lo sé. Pero creo que ya no se trata de eso.\n\nGuardó la corteza en su bolsita de semillas.\n\n—Quiero saber qué olvidamos. Por qué él es así. Por qué nosotros somos así.\n\nEl silencio fue largo, pero no incómodo.\nEra como el que existe entre las notas de una canción importante.\n\nAl amanecer, el Claro no estaba igual.\nDonde antes había vida, ahora había un camino de hojas oscuras. No muerto. No vivo. Solo... suspendido.\n\nY al fondo, donde el sol aún no tocaba, él lo esperaba.\n\nUmbra no se movía.\n\nSolo estaba.\n\nNilo respiró hondo. No para llenarse de valor. Sino para vaciarse de miedo.\n\n—Estoy listo —dijo.\n\nLuma asintió, conteniendo las ganas de abrazarlo. Sabía que este paso era solo suyo.\n\nY así, Nilo dio el primer paso hacia la raíz de todo.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Entrar al bosque marchito",
+          "target": "El lugar donde empezó el olvido"
+        }
+      ]
+    },
+    "El lugar donde empezó el olvido": {
+      "id": "27",
+      "text": "El bosque marchito no era oscuro.\nEra gris.\n\nEl tipo de gris que no es sombra ni luz, sino una pausa infinita entre ambas. Las hojas crujían como papel seco, y los árboles ya no tenían memoria. Solo costras de lo que alguna vez fue savia.\n\nNilo avanzó, y con cada paso, el aire se volvía más espeso. Como si el olvido tuviera peso.\n\nEntonces lo vio.\n\nUmbra.\n\nNo al acecho. No furioso.\nSolo... de pie.\n\nYa no era solo una figura de sombra. Había rasgos. Rastros de algo que alguna vez fue tierno. Un brote. Una esperanza.\n\n—No puedes detenerme —murmuró Umbra, sin moverse—. No estoy aquí para ser salvado.\n\nNilo se acercó. No para convencerlo, sino para entenderlo.\n\n—No vengo a salvarte. Vengo a recordarte.\n\nLa frase quedó suspendida como una gota a punto de caer.\nUmbra tembló. No de miedo. De duda.\n\n—¿Por qué? —preguntó. Y por un instante, su voz no era de sombra. Era de alguien que también había sido niño alguna vez.\n\nNilo sacó la corteza que había tallado la noche anterior.\nSe la mostró. Un simple círculo.\n\n—Porque fuiste parte de esto. Porque sigues siéndolo. Porque antes del olvido, hubo un juego. Un canto. Una risa. ¿Lo recuerdas? Yo estuve ahí... hasta que te fuiste.\n\nUmbra alzó la mano. Dudó. Y entonces, vio.\n\nNo un recuerdo. Un sentimiento.\nEl calor del sol en una raíz joven.\nLa brisa que nombraba cosas sin enseñarlas.\nUna risa. Una gota. Un nombre que había enterrado: el suyo.\n\nY lloró.\n\nNo con lágrimas. Con grietas.\n\nEl bosque respondió.\nUna hoja cayó. Verde.\nSolo una.\n\nPero suficiente.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Recordarle quién fue",
+          "target": "Memoria Compartida"
+        }
+      ]
+    },
+    "Memoria Compartida": {
+      "id": "28",
+      "text": "No hubo trueno.\nNi explosión.\nSolo silencio.\n\nUn silencio tan profundo que se volvió semilla.\n\nUmbra cerró los ojos.\nY por primera vez... no vio oscuridad.\n\nVio un campo abierto.\nVio la semilla que había sido.\nEl canto que olvidó.\nEl juego que nunca terminó, solo se deshizo en el viento.\n\nNilo no dijo nada. Solo se sentó a su lado, como quien entiende que hay batallas que no se ganan con fuerza, sino con presencia.\n\nLa corteza tallada descansaba entre ellos.\nY de ella brotaba una luz suave, como si los recuerdos no fueran imágenes, sino raíces reconectando.\n\nUmbra junto a Nilo la tocó.\n\nY entonces, sucedió.\n\nLos árboles cercanos parpadearon.\nNo con hojas. Con memoria.\nHistorias enterradas regresaron a las cortezas.\nRisas. Juegos. Tormentas y reconciliaciones.\nLo perdido ya no dolía: enseñaba.\n\nEl gris se volvió niebla.\nLa niebla, rocío.\nY en medio de todo, una flor pequeña, blanca y temblorosa, nació donde antes no había nada.\n\nUmbra la miró. Y sonrió.\n\nSolo un poco.\n\nNilo, agotado, recostó su espalda en un tronco tibio.\nNo sabía si habían vencido.\nPero sabían algo mejor:\n\nQue recordar también es resistir.\n\nY cuando la noche cayó, no fue un final.\nFue una pausa.\n\nUna que el bosque sabría llenar cuando volviera a cantar.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Epilogo",
+          "target": "Un nuevo brote"
+        }
+      ]
+    },
+    "Un nuevo brote": {
+      "id": "29",
+      "text": "El tiempo pasó.\nNo como un río. Como una raíz.\n\nInvisible, paciente, inevitable.\n\nEl Claro volvió a florecer. No igual, no como antes... mejor.\nPorque ya no era solo un lugar de recuerdos.\nEra un lugar que había aprendido a recordar.\n\nNilo, más alto, más callado, caminaba entre las hojas nuevas.\nLuma lo esperaba en la colina, con una sonrisa que no necesitaba palabras.\n\n—¿Crees que volverá? —preguntó ella.\n\nNilo miró el horizonte.\nLa niebla aún danzaba, pero ya no asustaba.\n\n—Umbra nunca se fue —dijo, y apuntó al árbol más joven del claro—. Solo cambió de forma.\n\nPorque Umbra no era un enemigo.\nEra un eco.\nUna sombra que solo necesitaba nombre.\n\nY ahora lo tenía.\n\nUn brote nuevo crecía donde Umbra lloró.\nY de él, cada día, caía una hoja distinta.\nUna historia. Un recuerdo. Un aviso.\n\nY en la aldea, cuando los nuevos retoños preguntaban por qué a veces el bosque parecía susurrar nombres desconocidos, los ancianos solo decían:\n\n—Porque recordar es como sembrar.\nSi lo haces bien... nunca termina.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "FIN",
+          "target": null
+        }
+      ]
+    },
+    "Lecciones para una sombra": {
+      "id": "30",
+      "text": "—Eso se llama “sonrisa” —explicó Nilo, dibujando una carita feliz en la tierra.\n\nLa sombra lo miró. Luego dibujó otra... con doce ojos, colmillos y una flor en la frente.\n\n—Cerca —dijo Nilo, con una risita nerviosa.\n\nPasaron la tarde así. Él enseñando palabras simples: amigo, árbol, no comas piedras. Ella repitiendo todo a su manera.\n\nCada vez que se emocionaba: florecía.\nCada vez que se frustraba: también.\n\nEl claro terminó cubierto de flores locas, brotes que aplaudían solos y una rama que decía “hola” cada vez que alguien pasaba.\n\n—Eres... muy tú —dijo Nilo, cubierto de pétalos y con savia en la ceja.\n\nLa sombra se inclinó. ¿Agradecimiento? ¿Instinto de comerse su zapato?\n\nNilo anotó en su cuaderno:\n\n“Quizás recordar no siempre es volver. A veces, es reinventar.”",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "El bosque reacciona",
+          "target": "Interferencia del Claro"
+        }
+      ]
+    },
+    "Interferencia del Claro": {
+      "id": "31",
+      "text": "No tardó mucho en pasar.\n\nEl Claro... reaccionó.\n\nPrimero fueron los árboles. Se inclinaron, apenas, como si sus ramas quisieran ver mejor.\n\nLuego, las raíces comenzaron a moverse bajo la tierra, como si el suelo respirara con más atención.\n\nNilo fingió que no lo notaba.\n\n—No hagas nada raro —le susurró a la sombra.\n\nElla ya tenía tres flores nuevas y estaba abrazando una piedra con mucha convicción.\n\n—Nada raro —repitió Nilo, entre dientes.\n\nPero entonces, el aire cambió. El viento silbó una melodía antigua. Y uno de los pájaros de luz se acercó volando... y desmayó al verla.\n\n—¡Shhh! ¡No florezcas ahora! —suplicó Nilo.\n\nDemasiado tarde.\n\nUna explosión de pétalos multicolor cubrió el claro, seguida por un pequeño estornudo de flores y una risa de hongo.\n\n—Esto... esto no está pasando —dijo Nilo mirando a su alrededor.\n\nDesde lo alto, un roble viejo crujió como si se riera.\n\n—¿El Claro te está juzgando? —preguntó la sombra, señalando al árbol.\n\nNilo la miró.\n\n—El Claro me está observando como si supiera algo que yo aún no quiero saber.\n\nY eso lo inquietaba. Porque el bosque recordaba cosas que él apenas empezaba a entender.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Llevarlo con Luma",
+          "target": "Un paseo incómodo"
+        }
+      ]
+    },
+    "Un paseo incómodo": {
+      "id": "32",
+      "text": "—Te vas a portar bien. Nada de florecer en público. Y si alguien te pregunta qué eres, tú... tú toses. Así, cof cof. ¿Entendido?\n\nUmbra parpadeó. Luego asintió.\nCinco pasos después, ya había florecido una maceta, saludado a una hormiga y confundido una silla con un \"señor árbol\".\n\nNilo suspiró mientras entraban a la aldea.\n\n—Esto va a salir terriblemente mal.\n\nLuma los esperaba en la plaza, sentada sobre una roca pulida con forma de estrella. Una brisa jugaba con sus pelitos voladores, esos que parecían siempre a punto de despegar.\n\n—¿Quién es tu pegote nuevo? —preguntó ella, con media sonrisa.\n\n—Un brote perdido. Lo encontré cerca del Claro. No recuerda nada... ni siquiera si es peligroso.\n\nUmbra dio un paso al frente.\n\n—Hola. ¿Tú eres... Lula?\n\n—Luma. —Ella alzó una ceja.\n\n—¡Casi! —Umbra floreció. Esta vez fue una lluvia de pétalos dulzones con aroma a mango.\n\n—¿Acaba de florecerme encima? —dijo Luma, mientras sacudía su hoja con cara de “¿qué clase de cita botánica es esta?”\n\nUno de los aldeanos se acercó, curioso. Umbra lo miró... y le floreció el sombrero.\n\n—¡No toques cosas ajenas! —Nilo lo empujó con suavidad hacia una pared.\n\nLuma cruzó los brazos, en silencio.\n\n—Nilo, ¿sabes lo que haces?\n\nNilo se quedó quieto. Miró a Umbra, que ahora intentaba enseñarle a una piedra a caminar.\n\n—No —respondió—. Pero creo que es importante.\n\nLuma lo observó en serio por unos segundos... y luego le lanzó una florcita juguetona a la cabeza.\n\n—Pues a ver cómo lo explicas cuando el Consejo empiece a notar que hay flores nuevas en las tejas.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Aceptar el cambio",
+          "target": "El brote que eligió reír"
+        }
+      ]
+    },
+    "El brote que eligió reír": {
+      "id": "33",
+      "text": "Esa noche, bajo la luna en espiral, Umbra dejó de florecer por un rato.\n\nEstaba sentado junto a Nilo, en la colina detrás de la aldea, donde el musgo contaba secretos y las piedras parecían saber escuchar.\n\n—No sé quién fui antes —dijo Umbra, mirando una luciérnaga que se enredaba en sus ramas—. Pero me gusta esto. Ser... raro. Reírme. Florecer sin permiso.\n\nNilo sonrió, apoyando su cuaderno sobre las rodillas.\n\n—No necesitas recordar para empezar. Puedes inventarte.\n\nSacó un pequeño objeto: un símbolo nuevo, hecho con ramitas entrelazadas, una flor y un hilo rojo.\n\n—Este no es un recuerdo. Es una posibilidad. Un \"quién podrías ser\".\n\nUmbra lo tomó con cuidado. Lo sostuvo como si pesara lo mismo que una estrella.\n\n—Entonces... ¿ya no soy \"el brote torcido\"? ¿Ni \"el niño hongo\"? ¿Ni \"el que florece por los pies\"?\n\n—Solo si tú quieres.\n\nUmbra pensó un momento. Sus ojos, aún sin forma exacta, brillaron con algo que parecía decisión. O travesura.\n\n—Quiero llamarme... Floronio Destructor del Olvido.\n\nNilo parpadeó. Una vez. Dos veces.\n\n—¿Eso es serio?\n\n—¡Claro que no! Pero suena épico, ¿no?\n\nY floreció. Con tanta fuerza que a Nilo le salieron pétalos del bolsillo.\n\n—Está bien —rió Nilo—. Pero para mí... sigues siendo Umbra. Uno nuevo. Uno distinto.\n\nLa criatura asintió. Y por primera vez, floreció en silencio. No por accidente. Sino porque así lo eligió.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Un final nuevo",
+          "target": "El Claro de las Risas"
+        }
+      ]
+    },
+    "El Claro de las Risas": {
+      "id": "34",
+      "text": "No todos entran al Claro.\n\nPero esa mañana, el bosque pareció abrirle paso a Nilo, a Luma... y a Umbra.\n\nEl suelo crujía distinto. Las raíces se movían suavemente, como si estuvieran despeinando la tierra solo para hacerles cosquillas al pasar.\n\nUmbra iba al frente, con su símbolo nuevo colgando del cuello y una flor que giraba como hélice sobre su cabeza.\n\n—¿Estás seguro de esto? —preguntó Luma, mientras esquivaba una enredadera que parecía querer abrazarla.\n\n—No —dijo Nilo, como siempre últimamente—. Pero el Claro sí lo está.\n\nEl lugar brillaba. No con luz normal. Con luz de risa, de juego, de cosas que no deberían existir pero existen igual. Como un hongo que contaba chistes malos. O una piedra que se carcajeaba si le hacías cosquillas.\n\nUmbra se detuvo en el centro del Claro.\n\nCerró los ojos. Y por primera vez, no floreció por accidente.\n\nLo hizo a propósito.\n\nUna explosión suave, de colores imposibles, cubrió el lugar. No era magia. Era decisión.\n\nEl Claro, en lugar de asustarse... se rió.\n\nLas ramas aplaudieron. Las flores nuevas bailaron. Y desde el cielo cayó una lluvia de pétalos que olían a galletas recién horneadas.\n\n—Creo... que lo hicimos —susurró Nilo.\n\n—¿Salvar al futuro antagonista? —preguntó Luma, divertida.\n\n—Salvar un recuerdo que todavía estaba por nacer.\n\nUmbra se giró. Estaba cubierto de flores, con una sonrisa rara, medio torcida, pero completamente suya.\n\nY entonces, sin previo aviso, florecióle el pelo a Luma.\n\n—¡OYE! —protestó ella, mientras le crecía un mini jardín en la cabeza.\n\nUmbra se encogió de hombros.\n\n—Fue sin querer... creo.\n\nTodos rieron.\n\nY el bosque, por primera vez en mucho tiempo, recordó cómo se sentía eso.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "FIN",
+          "target": null
+        }
+      ]
+    },
+    "El Eco de la Aldea": {
+      "id": "35",
+      "text": "Nilo retrocedió. No por cobardía, sino porque algo dentro de él le gritaba que aún no era el momento.\n\nLa figura de Umbra palpitaba en la distancia, oscura y vasta, y el bosque parecía retener el aliento.\n\nDio media vuelta. La niebla se cerró tras él como un telón.\n\nMientras corría, los hongos susurraban algo que no se atrevía a entender.\n\nY desde las raíces, como si lo vieran partir, se escuchó:\n\n—Huir no te salvará.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Seguir huyendo",
+          "target": "El Bosque Marchito"
+        }
+      ]
+    },
+    "El Combate de los Recuerdos": {
+      "id": "36",
+      "text": "Nilo no retrocedió.\n\nClavó los pies en la tierra y apretó el símbolo contra su pecho.\n\n—Si tengo que luchar por lo que fuimos… entonces lucharé.\n\nUmbra no respondió. Solo alzó una mano.\n\nY el bosque rugió.\n\nRaíces negras brotaron como lanzas, hongos chispeaban como brasas. Las flores del suelo se marchitaban a su paso.\n\nNilo gritó, no de rabia, sino de memoria. Cada golpe que esquivaba, cada luz que proyectaba desde él, era un nombre, una risa, un momento.\n\nEl bosque entero ardía entre pasado y olvido.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Seguir luchando",
+          "target": "La Luz y la Sombra"
+        }
+      ]
+    },
+    "El Bosque Marchito": {
+      "id": "37",
+      "text": "Los días pasaron. O tal vez fueron horas. Nilo ya no sabía.\n\nEl bosque a su paso estaba distinto. No callado... muerto.\n\nLas flores se encogían. Las ramas no crujían, se quebraban.\n\nUmbra no lo perseguía. No hacía falta.\n\nSu niebla morada se había desparramado como tinta en agua.\n\nEn la distancia, la aldea perdía su color. Cada rincón, cada huella, se borraba lentamente. Como si alguien desenredara el mundo.\n\nY Nilo, sin aliento, apenas podía ver hacia atrás.\n\n—¿Y si ya es tarde? —susurró.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Buscar respuestas",
+          "target": "La Última Esperanza"
+        }
+      ]
+    },
+    "La Última Esperanza": {
+      "id": "38",
+      "text": "Nilo llegó al borde del bosque, donde las raíces no crecían y las piedras aún recordaban.\n\nSe arrodilló ante un antiguo círculo olvidado, donde la tierra aún murmuraba.\n\n—¿Qué hago si ya no queda nada?\n\nEl viento no respondió. Pero una hoja, seca y dorada, cayó en su mano. No era un símbolo, pero sí una promesa.\n\nVolvería.\n\nAún sin fuerzas. Aún sin certezas.\n\nPorque incluso si Umbra reinaba... el recuerdo de lo que fueron todavía podía arder.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Volver a la aldea",
+          "target": "El Guardián de las Memorias"
+        }
+      ]
+    },
+    "El Guardián de las Memorias": {
+      "id": "39",
+      "text": "La aldea ya no era la misma.\n\nCalles cubiertas de musgo, puertas abiertas al vacío, faroles sin luz.\n\nPero entre las sombras, algo permanecía.\n\nNilo caminó en silencio, el símbolo del recuerdo apretado en su mano, como si aún pudiera calentar algo.\n\nNo podía enfrentarse a Umbra. Pero sí podía proteger lo poco que quedaba.\n\nReunió historias, restauró nombres borrados, plantó flores donde hubo risas. Archivó canciones en murales. Pintó las memorias en piedras, para que ni el viento ni el olvido pudieran arrancarlas del todo.\n\nLos niños —pocos— comenzaron a jugar otra vez. Con miedo. Pero también con curiosidad.\n\nY en lo más profundo del bosque, Umbra reinaba. Oscuro. Triste. Silencioso.\n\nPero cada vez que alguien en la aldea reía, una flor aparecía. No en el bosque. En el corazón de una pared. En una taza olvidada. En una grieta del suelo.\n\nComo si los recuerdos, aunque rotos, supieran encontrar un camino volviéndose a crear.\n\nNilo no era un héroe.\n\nEra un guardián.\n\nY eso, por ahora... bastaba.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "FIN",
+          "target": null
+        }
+      ]
+    },
+    "La Luz y la Sombra": {
+      "id": "40",
+      "text": "La pelea no era justa.\n\nNilo estaba cansado, herido, cubierto de barro y pétalos rotos. Umbra parecía no agotarse nunca.\n\n—Tú no entiendes —susurró Umbra—. Esto es más grande que tú.\n\n—Tal vez —dijo Nilo, temblando—. Pero yo sí recuerdo quién eras.\n\nEso bastó para romper algo.\n\nUn destello.\n\nUna chispa.\n\nPor un segundo, Umbra dudó. Y esa grieta en su oscuridad fue todo lo que Nilo necesitó.\n\nCorrió, con un símbolo en mano, y lo presionó contra el pecho de Umbra.\n\nNo para herirlo... sino para recordarlo.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "La flor que no brotó",
+          "target": "El Reino del Olvido"
+        },
+        {
+          "label": "La raíz que no se rompió",
+          "target": "Raíz Compartida"
+        }
+      ]
+    },
+    "El Reino del Olvido": {
+      "id": "41",
+      "text": "El símbolo tembló entre las manos de Nilo y el pecho de Umbra.\n\nPor un momento, la sombra flaqueó.\n\nEl bosque pareció contener la respiración.\n\nPero entonces, Umbra cerró los ojos... y rompió el símbolo con una sola mano.\n\nEl crujido fue seco. Como una memoria quebrándose.\n\n—No necesito recordar —susurró Umbra—. Ya no.\n\nLa oscuridad floreció como una plaga. Las raíces se enredaron con las nubes. Los hongos cubrieron el cielo. La aldea, la luz, los nombres... todo comenzó a desvanecerse.\n\nNilo cayó de rodillas.\n\n—Lo intenté... —murmuró.\n\nY aún así, no lloró.\n\nPorque aunque Umbra lo venció, una sola cosa no logró apagar:\n\nNilo seguía recordando.\n\nLo mantuvieron con vida. Encerrado en una flor de piedra. Silencioso, pero intacto.\n\nLos niños, en generaciones futuras, dirían que en lo más profundo del bosque había una estatua que aún susurraba nombres en sueños. Que si uno se acercaba lo suficiente, podía oír risas que el tiempo no había podido borrar.\n\nUmbra reinó. El bosque obedeció.\n\nPero los recuerdos... aún resistían.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "FIN",
+          "target": null
+        }
+      ]
+    },
+    "Raíz Compartida": {
+      "id": "42",
+      "text": "El símbolo brillaba entre ellos, vibrando como un corazón que aún quiere creer.\n\nUmbra temblaba. Por primera vez, no por rabia... sino por algo más parecido al miedo.\n\n—No sé si puedo ser otra cosa —dijo con voz apenas audible.\n\n—No tienes que ser lo de antes —respondió Nilo, con suavidad—. Solo... no ser lo que el olvido te obligó a ser.\n\nLa sombra titubeó.\n\nY luego, como una raíz que se niega a romperse, se dobló... pero no cayó.\n\nEl bosque no aplaudió. No hubo sol. No hubo milagro.\n\nSolo una pequeña flor.\n\nNació entre los pies de ambos. Tenía pétalos oscuros y un centro brillante. Era rara. Torcida. Ningún botánico la entendería.\n\nPero estaba viva.\n\nUmbra se sentó junto a Nilo. No dijo nada más.\n\nY Nilo, por primera vez en mucho tiempo, sonrió.\n\nTal vez el bosque aún estaba herido. Tal vez habría que reconstruirlo rama por rama, recuerdo por recuerdo.\n\nPero no estarían solos.\n\nLa sombra y el olvido ya no reinaban.\n\nAhora... acompañaba.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "FIN",
+          "target": null
+        }
+      ]
+    },
+    "El susurro de los siglos": {
+      "id": "43",
+      "text": "Nilo caminaba entre los árboles, alejándose del lugar donde la imagen de la mujer de pétalos había aparecido. Sus pasos eran rápidos, deliberados, como si pudiera dejar atrás los recuerdos simplemente poniendo distancia física.\n\nEl zumbido en su pecho, ese que siempre lo acompañaba en el Claro, parecía haberse intensificado. Ya no era un susurro sino una exigencia que reverberaba dentro de él.\n\nSe detuvo junto a un viejo roble, apoyando la frente contra su corteza rugosa.\n\n—No quiero recordar —murmuró—. Si alguna vez conocí a esa mujer... si alguna vez fui parte de algo más... ya no importa.\n\nEl viento se agitó suavemente, trayendo consigo el aroma dulce de flores lejanas. Por un instante, le recordó a ella. A la mujer que decía no conocer.\n\nCerró los ojos con fuerza, intentando expulsar la imagen. Pero ella persistía, como un eco entre las ramas del bosque.\n\nSintió una presencia a su espalda. Al girarse, vio una cipsela solitaria flotando hacia él. Una de las que Luma había guardado. La pequeña semilla brillaba con la luz tenue del recuerdo.\n\nNilo estiró la mano instintivamente para tomarla, pero se detuvo a medio camino.\n\n—Ya te dije que no.\n\nLa cipsela siguió flotando, inconmovible, paciente. Como si fuera consciente de que solo era cuestión de tiempo.\n\nNilo suspiró profundamente. Algo dentro de él estaba cediendo, una resistencia que se desmoronaba lentamente.\n\n—¿Y si duele? —preguntó al aire—. ¿Y si recordar significa sufrir?\n\nLa cipsela bailó ligeramente, acercándose más a su mano extendida.\n\nHabía algo en ese gesto, tan sencillo, tan persistente, que lo conmovió. Tal vez no todas las memorias fueran oscuras. Tal vez algunas valieran la pena ser recuperadas.\n\nCon dedos temblorosos, finalmente tomó la cipsela. Un calor suave emanó de ella, expandiéndose por su palma hasta su pecho, hasta alcanzar el zumbido que lo había acompañado durante tanto tiempo.\n\nY entonces lo entendió.\n\nNo era un zumbido. Era un eco. Un eco de voces, de risas, de momentos que había abandonado en algún rincón de sí mismo.\n\n—Quizás... —murmuró mientras sus dedos se cerraban con cuidado alrededor de la cipsela—. Quizás pueda recordar solo un poco. Solo lo suficiente para entender.\n\nLa luz de la cipsela se intensificó, como respondiendo a su rendición.\n\nEn ese momento, Nilo supo que ya no podía seguir huyendo. Que el recuerdo, como el Claro mismo, terminaría encontrándolo.\n\nCon un suspiro de resignación, dio media vuelta y comenzó a caminar de regreso hacia donde había dejado a Luma.\n\nSi los recuerdos iban a perseguirlo, mejor enfrentarlos con alguien que estuviera dispuesto a guardarlos.\n\nNilo comenzó a ir más al Claro.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Investigar lo que ocurre",
+          "target": "Vínculo con el Claro"
+        }
+      ]
+    },
+    "La negación de Nilo": {
+      "id": "44",
+      "text": "El recuerdo se desplegó como una flor que no conocía estaciones. Sin permiso. Sin piedad.\n\nLuma ya no flotaba: caía. Pero no en un abismo, sino en un río de imágenes. Sus cipselas se extendían como raíces, absorbiendo emociones ajenas, tiempos rotos.\n\nVio un claro distinto. Más joven. Más vivo.\n\nLa mujer de pétalos estaba allí. Su presencia era luz. Sus risas hacían florecer los árboles. Pero algo en su centro parecía desvanecerse, como si supiera que su tiempo había llegado al borde.\n\nY entonces lo vio: una figura más pequeña, de sombra aún incompleta. Umbra. No era oscuro, aún no. Solo un eco de lo que vendría.\n\nLa mujer se arrodilló frente a él.\n\n—Lo siento —susurró, y sus pétalos comenzaron a caer uno a uno—. No puedo quedarme.\n\nUmbra alzó la mano, como si pudiera detener la despedida. Pero no había ira en su gesto. Solo una tristeza tan profunda que el bosque entero contuvo el aliento.\n\nElla se desvaneció en un remolino de viento y memoria.\n\nY Umbra... no gritó. Solo se quedó quieto, hasta que la sombra empezó a crecer desde sus pies.\n\nEl olvido había nacido.\n\nLuma despertó con un temblor en sus cipselas. Aún sentía la ausencia. El abandono. La semilla del dolor.\n\nY entendió que ser guardiana no era una elección de poder. Era una promesa de presencia.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Guardar este recuerdo como el primero de muchos",
+          "target": "El eco de una nueva guardiana"
+        }
+      ]
+    },
+    "El eco de una nueva guardiana": {
+      "id": "45",
+      "text": "El recuerdo se disipó con la suavidad de un suspiro antiguo. Luma volvió al Claro, pero ya nada era igual.\n\nEl silencio no era vacío. Era respeto.\n\nSus cipselas seguían encendidas, más firmes que antes. Ya no danzaban al azar: flotaban en armonía, como si supieran lo que eran ahora. Testigos. Portadoras.\n\nUna de ellas, la más tenue, dejó caer un pétalo translúcido. Era el primero.\n\nLuma lo miró flotar hacia la tierra, y entendió: la memoria también se desgasta. También duele. Pero mientras alguien la sostenga, el olvido no podrá reclamarlo todo.\n\nDesde lejos, el sonido de pasos rompió el momento. Nilo. Caminaba solo, adentrándose entre los árboles, aún negando lo que había sentido.\n\nNo se volvió. No miró atrás.\n\nLuma tampoco lo llamó.\n\nNo con palabras.\n\nSolo cerró los ojos y susurró hacia las raíces, hacia la tierra, hacia el tiempo:\n\n—No serás olvidado. Ninguno lo será.\n\nY el Claro respondió con un leve temblor, como un corazón que vuelve a latir después de mucho silencio.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "Y entonces... ¿Qué pasó con Nilo?",
+          "target": "Y entonces. . . ¿Que pasó con Nilo?"
+        }
+      ]
+    },
+    "Y entonces. . . ¿Que pasó con Nilo?": {
+      "id": "46",
+      "text": "¿Nilo? Nilo no miró atrás.\n\nEl viento lo empujaba entre ramas quebradas, lejos del Claro, lejos de Luma, lejos de la verdad que no quiso sostener.\n\nA cada paso, la bruma se espesaba. No era niebla real: era el olvido. Suave al principio, como un suspiro sobre el agua. Luego más denso, como si la historia comenzara a borrarse tras él.\n\n—No era mío —repitió, como un mantra hueco.\n\nPero en su pecho algo palpitaba. No un recuerdo, sino su ausencia. Un hueco que crecía, hambriento.\n\nLa voz de Luma no lo siguió. Tampoco los ecos del Claro.\n\nSolo el silencio.\n\nY en ese silencio se evaporó.",
+      "image": "https://picsum.photos/id/237/200/300",
+      "options": [
+        {
+          "label": "FIN",
+          "target": null
+        }
+      ]
+    }
   }
 }
