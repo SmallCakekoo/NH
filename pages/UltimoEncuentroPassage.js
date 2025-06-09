@@ -1,4 +1,4 @@
-class ÚltimoEncuentroPassage extends HTMLElement {
+class UltimoEncuentroPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -203,4 +203,4 @@ class ÚltimoEncuentroPassage extends HTMLElement {
   }
 }
 
-export default ÚltimoEncuentroPassage;
+export default UltimoEncuentroPassage;

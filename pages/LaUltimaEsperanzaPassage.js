@@ -1,4 +1,4 @@
-class RaízDeSombraPassage extends HTMLElement {
+class LaUltimaEsperanzaPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -12,7 +12,7 @@ class RaízDeSombraPassage extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
             <style>
-               :host {
+                :host {
                     display: block;
                     padding: 20px;
                 }
@@ -126,34 +126,24 @@ class RaízDeSombraPassage extends HTMLElement {
             </style>
 
             <div class="passage-container">
-                <img class="passage-image" src="assets/images/PS14.png" alt="Escena del pasaje">
+                <img class="passage-image" src="assets/images/PS34.png" alt="Escena del pasaje">
                 <div class="passage-text">
-                    El nombre retumbó en su pecho como una campana antigua: Umbra.
+                    Nilo llegó al borde del bosque, donde las raíces no crecían y las piedras aún recordaban.
 
-                    No sabía quién era. Ni qué quería. Solo sabía que no lo había visto... porque decidió no verlo.
+                    Se arrodilló ante un antiguo círculo olvidado, donde la tierra aún murmuraba.
 
-                    Los días siguientes fueron un desfile de silencios. Nilo recorría el Claro como si buscara algo que había estado ahí y ya no. Las flores tardaban más en abrir. Las mariposas que antes bailaban cerca del arroyo ahora evitaban el viento. La tierra, antes húmeda y fértil, se agrietaba bajo sus pies. Incluso Luma notó que algo estaba cambiando, aunque no dijera nada.
+                    —¿Qué hago si ya no queda nada?
 
-                    En la aldea, los cambios eran imposibles de ignorar. La anciana Mina ya no recordaba las canciones que había cantado toda su vida. Los niños olvidaban los nombres de los árboles que sus padres les habían enseñado. Y el viejo Tero, el mejor tejedor de cestas, miraba sus propias manos como si fueran ajenas, incapaz de recordar patrones que dominaba desde joven.
+                    El viento no respondió. Pero una hoja, seca y dorada, cayó en su mano. No era un símbolo, pero sí una promesa.
 
-                    —Es como si la memoria se escurriera entre los dedos —dijo alguien en el mercado, mientras intentaba recordar para qué había venido.
+                    Volvería.
 
-                    Nilo lo entendió entonces. El olvido se extendía desde el Claro hasta la aldea, marchitando no solo las plantas sino también los recuerdos. Y con cada memoria perdida, la tierra se secaba un poco más.
+                    Aún sin fuerzas. Aún sin certezas.
 
-                    Una noche, mientras todos dormían, Nilo se acercó al árbol dorado y apoyó la frente contra su corteza.
-
-                    —No supe qué hacer —susurró—. Tenía miedo. A veces todavía lo tengo.
-
-                    La corteza no respondió, pero el suelo tembló suavemente, como si el bosque entero respirara con él.
-
-                    Entonces lo entendió. No se trataba solo de él.
-
-                    El olvido no era suyo. Era del bosque. Era de Umbra, aquella criatura abandonada que crecía alimentándose de memorias. Y si no hacía nada, crecería como maleza sobre todo lo que amaba.
-
-                    Al amanecer, caminó sin detenerse hasta la aldea. Tenía que decirlo. Aunque no supiera cómo. Aunque nadie le creyera.
+                    Porque incluso si Umbra reinaba... el recuerdo de lo que fueron todavía podía arder.
                 </div>
                 <div class="options-container">
-                    <button class="option-button" data-target="Encuentro con Umbra">Advertir a la aldea</button>
+                    <button class="option-button" data-target="El Guardián de las Memorias">Volver a la aldea</button>
                 </div>
             </div>
         `;
@@ -176,4 +166,4 @@ class RaízDeSombraPassage extends HTMLElement {
   }
 }
 
-export default RaízDeSombraPassage;
+export default LaUltimaEsperanzaPassage;

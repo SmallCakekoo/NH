@@ -1,4 +1,4 @@
-class RaízCompartidaPassage extends HTMLElement {
+class RaizCompartidaPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -184,4 +184,4 @@ class RaízCompartidaPassage extends HTMLElement {
   }
 }
 
-export default RaízCompartidaPassage;
+export default RaizCompartidaPassage;

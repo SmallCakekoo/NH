@@ -1,4 +1,4 @@
-class ElGuardiánDeLasMemoriasPassage extends HTMLElement {
+class ElLugarDondeEmpezoElOlvidoPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -12,7 +12,7 @@ class ElGuardiánDeLasMemoriasPassage extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
             <style>
-               :host {
+              :host {
                     display: block;
                     padding: 20px;
                 }
@@ -126,36 +126,59 @@ class ElGuardiánDeLasMemoriasPassage extends HTMLElement {
             </style>
 
             <div class="passage-container">
-                <img class="passage-image" src="assets/images/PS35.png" alt="Escena del pasaje">
+               <img class="passage-image" src="assets/images/PS29.png" alt="Escena del pasaje">
                 <div class="passage-text">
-                    La aldea ya no era la misma.
+                    El bosque marchito no era oscuro.
+                    Era gris.
 
-                    Calles cubiertas de musgo, puertas abiertas al vacío, faroles sin luz.
+                    El tipo de gris que no es sombra ni luz, sino una pausa infinita entre ambas. Las hojas crujían como papel seco, y los árboles ya no tenían memoria. Solo costras de lo que alguna vez fue savia.
 
-                    Pero entre las sombras, algo permanecía.
+                    Nilo avanzó, y con cada paso, el aire se volvía más espeso. Como si el olvido tuviera peso.
 
-                    Nilo caminó en silencio, el símbolo del recuerdo apretado en su mano, como si aún pudiera calentar algo.
+                    Entonces lo vio.
 
-                    No podía enfrentarse a Umbra. Pero sí podía proteger lo poco que quedaba.
+                    Umbra.
 
-                    Reunió historias, restauró nombres borrados, plantó flores donde hubo risas. Archivó canciones en murales. Pintó las memorias en piedras, para que ni el viento ni el olvido pudieran arrancarlas del todo.
+                    No al acecho. No furioso.
+                    Solo... de pie.
 
-                    Los niños —pocos— comenzaron a jugar otra vez. Con miedo. Pero también con curiosidad.
+                    Ya no era solo una figura de sombra. Había rasgos. Rastros de algo que alguna vez fue tierno. Un brote. Una esperanza.
 
-                    Y en lo más profundo del bosque, Umbra reinaba. Oscuro. Triste. Silencioso.
+                    —No puedes detenerme —murmuró Umbra, sin moverse—. No estoy aquí para ser salvado.
 
-                    Pero cada vez que alguien en la aldea reía, una flor aparecía. No en el bosque. En el corazón de una pared. En una taza olvidada. En una grieta del suelo.
+                    Nilo se acercó. No para convencerlo, sino para entenderlo.
 
-                    Como si los recuerdos, aunque rotos, supieran encontrar un camino volviéndose a crear.
+                    —No vengo a salvarte. Vengo a recordarte.
 
-                    Nilo no era un héroe.
+                    La frase quedó suspendida como una gota a punto de caer.
+                    Umbra tembló. No de miedo. De duda.
 
-                    Era un guardián.
+                    —¿Por qué? —preguntó. Y por un instante, su voz no era de sombra. Era de alguien que también había sido niño alguna vez.
 
-                    Y eso, por ahora... bastaba.
+                    Nilo sacó la corteza que había tallado la noche anterior.
+                    Se la mostró. Un simple círculo.
+
+                    —Porque fuiste parte de esto. Porque sigues siéndolo. Porque antes del olvido, hubo un juego. Un canto. Una risa. ¿Lo recuerdas? Yo estuve ahí... hasta que te fuiste.
+
+                    Umbra alzó la mano. Dudó. Y entonces, vio.
+
+                    No un recuerdo. Un sentimiento.
+                    El calor del sol en una raíz joven.
+                    La brisa que nombraba cosas sin enseñarlas.
+                    Una risa. Una gota. Un nombre que había enterrado: el suyo.
+
+                    Y lloró.
+
+                    No con lágrimas. Con grietas.
+
+                    El bosque respondió.
+                    Una hoja cayó. Verde.
+                    Solo una.
+
+                    Pero suficiente.
                 </div>
                 <div class="options-container">
-                    <button class="option-button" data-target="FIN">FIN</button>
+                    <button class="option-button" data-target="Memoria Compartida">Recordarle quién fue</button>
                 </div>
             </div>
         `;
@@ -178,4 +201,4 @@ class ElGuardiánDeLasMemoriasPassage extends HTMLElement {
   }
 }
 
-export default ElGuardiánDeLasMemoriasPassage;
+export default ElLugarDondeEmpezoElOlvidoPassage;

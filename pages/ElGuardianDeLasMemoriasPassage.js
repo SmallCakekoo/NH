@@ -1,4 +1,4 @@
-class LaÚltimaEsperanzaPassage extends HTMLElement {
+class ElGuardianDeLasMemoriasPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -12,7 +12,7 @@ class LaÚltimaEsperanzaPassage extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
             <style>
-                :host {
+               :host {
                     display: block;
                     padding: 20px;
                 }
@@ -126,24 +126,36 @@ class LaÚltimaEsperanzaPassage extends HTMLElement {
             </style>
 
             <div class="passage-container">
-                <img class="passage-image" src="assets/images/PS34.png" alt="Escena del pasaje">
+                <img class="passage-image" src="assets/images/PS35.png" alt="Escena del pasaje">
                 <div class="passage-text">
-                    Nilo llegó al borde del bosque, donde las raíces no crecían y las piedras aún recordaban.
+                    La aldea ya no era la misma.
 
-                    Se arrodilló ante un antiguo círculo olvidado, donde la tierra aún murmuraba.
+                    Calles cubiertas de musgo, puertas abiertas al vacío, faroles sin luz.
 
-                    —¿Qué hago si ya no queda nada?
+                    Pero entre las sombras, algo permanecía.
 
-                    El viento no respondió. Pero una hoja, seca y dorada, cayó en su mano. No era un símbolo, pero sí una promesa.
+                    Nilo caminó en silencio, el símbolo del recuerdo apretado en su mano, como si aún pudiera calentar algo.
 
-                    Volvería.
+                    No podía enfrentarse a Umbra. Pero sí podía proteger lo poco que quedaba.
 
-                    Aún sin fuerzas. Aún sin certezas.
+                    Reunió historias, restauró nombres borrados, plantó flores donde hubo risas. Archivó canciones en murales. Pintó las memorias en piedras, para que ni el viento ni el olvido pudieran arrancarlas del todo.
 
-                    Porque incluso si Umbra reinaba... el recuerdo de lo que fueron todavía podía arder.
+                    Los niños —pocos— comenzaron a jugar otra vez. Con miedo. Pero también con curiosidad.
+
+                    Y en lo más profundo del bosque, Umbra reinaba. Oscuro. Triste. Silencioso.
+
+                    Pero cada vez que alguien en la aldea reía, una flor aparecía. No en el bosque. En el corazón de una pared. En una taza olvidada. En una grieta del suelo.
+
+                    Como si los recuerdos, aunque rotos, supieran encontrar un camino volviéndose a crear.
+
+                    Nilo no era un héroe.
+
+                    Era un guardián.
+
+                    Y eso, por ahora... bastaba.
                 </div>
                 <div class="options-container">
-                    <button class="option-button" data-target="El Guardián de las Memorias">Volver a la aldea</button>
+                    <button class="option-button" data-target="FIN">FIN</button>
                 </div>
             </div>
         `;
@@ -166,4 +178,4 @@ class LaÚltimaEsperanzaPassage extends HTMLElement {
   }
 }
 
-export default LaÚltimaEsperanzaPassage;
+export default ElGuardianDeLasMemoriasPassage;

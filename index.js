@@ -12,27 +12,27 @@ import VinculoConElClaroPassage from "./pages/VinculoConElClaroPassage.js";
 import UnRecuerdoFragmentadoPassage from "./pages/UnRecuerdoFragmentadoPassage.js";
 import UnPaseoIncomodoPassage from "./pages/UnPaseoIncomodoPassage.js";
 import UnNuevoBrotePassage from "./pages/UnNuevoBrotePassage.js";
-import ÚltimoEncuentroPassage from "./pages/ÚltimoEncuentroPassage.js";
+import UltimoEncuentroPassage from "./pages/UltimoEncuentroPassage.js";
 import TierraDeOlvidosPassage from "./pages/TierraDeOlvidosPassage.js";
 import SombrasQueNoVimosPassage from "./pages/SombrasQueNoVimosPassage.js";
 import SombrasAntiguasPassage from "./pages/SombrasAntiguasPassage.js";
-import RaízInciertaPassage from "./pages/RaízInciertaPassage.js";
-import RaízDeSombraPassage from "./pages/RaízDeSombraPassage.js";
-import RaízCompartidaPassage from "./pages/RaízCompartidaPassage.js";
+import RaizInciertaPassage from "./pages/RaizInciertaPassage.js";
+import RaizDeSombraPassage from "./pages/RaizDeSombraPassage.js";
+import RaizCompartidaPassage from "./pages/RaizCompartidaPassage.js";
 import PrimerRecuerdoPassage from "./pages/PrimerRecuerdoPassage.js";
 import LlamadoVerdaderoPassage from "./pages/LlamadoVerdaderoPassage.js";
 import LeccionesParaUnaSombraPassage from "./pages/LeccionesParaUnaSombraPassage.js";
-import LaÚltimaEsperanzaPassage from "./pages/LaÚltimaEsperanzaPassage.js";
+import LaUltimaEsperanzaPassage from "./pages/LaUltimaEsperanzaPassage.js";
 import LaLuzYLaSombraPassage from "./pages/LaLuzYLaSombraPassage.js";
 import InterferenciaDelClaroPassage from "./pages/InterferenciaDelClaroPassage.js";
 import HablanDeUmbraPassage from "./pages/HablanDeUmbraPassage.js";
-import EpílogoPassage from "./pages/EpílogoPassage.js";
+import EpilogoPassage from "./pages/EpilogoPassage.js";
 import EncuentroConUmbraPassage from "./pages/EncuentroConUmbraPassage.js";
 import EnBuscaDeUmbraPassage from "./pages/EnBuscaDeUmbraPassage.js";
 import ElReinoDelOlvidoPassage from "./pages/ElReinoDelOlvidoPassage.js";
 import ElNidoDeUmbraPassage from "./pages/ElNidoDeUmbraPassage.js";
-import ElLugarDondeEmpezóElOlvidoPassage from "./pages/ElLugarDondeEmpezóElOlvidoPassage.js";
-import ElGuardiánDeLasMemoriasPassage from "./pages/ElGuardiánDeLasMemoriasPassage.js";
+import ElLugarDondeEmpezoElOlvidoPassage from "./pages/ElLugarDondeEmpezoElOlvidoPassage.js";
+import ElGuardianDeLasMemoriasPassage from "./pages/ElGuardianDeLasMemoriasPassage.js";
 import ElEcoDeUnaNuevaGuardianaPassage from "./pages/ElEcoDeUnaNuevaGuardianaPassage.js";
 import ElEcoDeLaAldeaPassage from "./pages/ElEcoDeLaAldeaPassage.js";
 import ElCombateDeLosRecuerdosPassage from "./pages/ElCombateDeLosRecuerdosPassage.js";
@@ -67,38 +67,38 @@ customElements.define(
 );
 customElements.define("un-paseo-incomodo-passage", UnPaseoIncomodoPassage);
 customElements.define("un-nuevo-brote-passage", UnNuevoBrotePassage);
-customElements.define("ultimo-encuentro-passage", ÚltimoEncuentroPassage);
+customElements.define("ultimo-encuentro-passage", UltimoEncuentroPassage);
 customElements.define("tierra-de-olvidos-passage", TierraDeOlvidosPassage);
 customElements.define("sombras-que-no-vimos-passage", SombrasQueNoVimosPassage);
 customElements.define("sombras-antiguas-passage", SombrasAntiguasPassage);
-customElements.define("raiz-incierta-passage", RaízInciertaPassage);
-customElements.define("raiz-de-sombra-passage", RaízDeSombraPassage);
-customElements.define("raiz-compartida-passage", RaízCompartidaPassage);
+customElements.define("raiz-incierta-passage", RaizInciertaPassage);
+customElements.define("raiz-de-sombra-passage", RaizDeSombraPassage);
+customElements.define("raiz-compartida-passage", RaizCompartidaPassage);
 customElements.define("primer-recuerdo-passage", PrimerRecuerdoPassage);
 customElements.define("llamado-verdadero-passage", LlamadoVerdaderoPassage);
 customElements.define(
   "lecciones-para-una-sombra-passage",
   LeccionesParaUnaSombraPassage
 );
-customElements.define("la-ultima-esperanza-passage", LaÚltimaEsperanzaPassage);
+customElements.define("la-ultima-esperanza-passage", LaUltimaEsperanzaPassage);
 customElements.define("la-luz-y-la-sombra-passage", LaLuzYLaSombraPassage);
 customElements.define(
   "interferencia-del-claro-passage",
   InterferenciaDelClaroPassage
 );
 customElements.define("hablan-de-umbra-passage", HablanDeUmbraPassage);
-customElements.define("epilogo-passage", EpílogoPassage);
+customElements.define("epilogo-passage", EpilogoPassage);
 customElements.define("encuentro-con-umbra-passage", EncuentroConUmbraPassage);
 customElements.define("en-busca-de-umbra-passage", EnBuscaDeUmbraPassage);
 customElements.define("el-reino-del-olvido-passage", ElReinoDelOlvidoPassage);
 customElements.define("el-nido-de-umbra-passage", ElNidoDeUmbraPassage);
 customElements.define(
   "el-lugar-donde-empezo-el-olvido-passage",
-  ElLugarDondeEmpezóElOlvidoPassage
+  ElLugarDondeEmpezoElOlvidoPassage
 );
 customElements.define(
   "el-guardian-de-las-memorias-passage",
-  ElGuardiánDeLasMemoriasPassage
+  ElGuardianDeLasMemoriasPassage
 );
 customElements.define(
   "el-eco-de-una-nueva-guardiana-passage",

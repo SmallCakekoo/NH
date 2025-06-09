@@ -1,4 +1,4 @@
-class RaízInciertaPassage extends HTMLElement {
+class EpilogoPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -12,7 +12,7 @@ class RaízInciertaPassage extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
             <style>
-                :host {
+               :host {
                     display: block;
                     padding: 20px;
                 }
@@ -126,44 +126,32 @@ class RaízInciertaPassage extends HTMLElement {
             </style>
 
             <div class="passage-container">
-               <img class="passage-image" src="assets/images/PS7.png" alt="Escena del pasaje">
+                <img class="passage-image" src="assets/images/PS18.png" alt="Escena del pasaje">
                 <div class="passage-text">
-                    Al día siguiente, Nilo volvió al claro.
+                    Nilo no volvió a la aldea.
+                    Se desvaneció al tocar a Umbra, como una gota que se entrega al río.
 
-                    No había dormido bien. El recuerdo —o el sueño— seguía aferrado a su mente como una espina suave, que no dolía pero no lo dejaba en paz.
+                    No hubo despedidas.
+                    Solo silencio.
+                    Y luego… rocío.
 
-                    El árbol bajo el que se había quedado dormido seguía allí, dorado y silencioso. Pero algo había cambiado. No en el árbol. En él.
+                    Desde entonces, cada mañana cae una niebla suave sobre el Claro.
+                    Una bruma que refresca, que limpia, que recuerda.
+                    Las hojas perdidas reverdecen.
+                    Las memorias rotas se reconstruyen, poco a poco.
 
-                    Se sentó con las piernas cruzadas, como había visto hacer a los sabios de la aldea. Cerró los ojos. Respiró lento.
+                    Luma lo recuerda.
+                    Lo cuenta en la plaza, bajo el árbol viejo.
+                    A los niños. A los hongos que ahora son libres. A quien quiera escuchar.
 
-                    —¿Qué quieres mostrarme? —susurró.
+                    Y así, Nilo sigue aquí.
+                    No como un héroe.
+                    Sino como lo que siempre fue:
 
-                    Nada.
-
-                    El viento pasó, ignorante. Las hojas cayeron sin apuro. Y sin embargo… había algo. Un murmullo apenas audible. Como si el claro susurrara, pero no a él.
-
-                    "Recuerda. . . quién fuiste antes de preguntar. . ."
-
-                    Nilo abrió los ojos de golpe. ¿Antes de qué? ¿Qué quería decir eso?
-
-                    —¿Antes de preguntar? ¿Qué significa? —dijo en voz alta, esta vez sin temor a romper el silencio.
-
-                    Luma apareció entre la niebla, como si la hubiera llamado con el pensamiento.
-
-                    —¿Otra vez hablando solo?
-
-                    —No estoy solo —respondió Nilo, más seguro de lo que esperaba—. Solo que el bosque. . . aún no está seguro de que yo sea yo.
-
-                    Luma se sentó a su lado. No dijo nada por un rato. Luego, con la voz más tranquila que nunca:
-
-                    —Entonces tal vez no tienes que convencer al bosque. Tienes que recordarte a ti.
-
-                    Nilo la miró. Y por primera vez, pensó que quizá la respuesta no estaba en los árboles. Sino en sus raíces.
-
-                    Las suyas.
+                    El Guardián del Rocío.
                 </div>
                 <div class="options-container">
-                    <button class="option-button" data-target="Caminos de Memoria">Buscar en su historia</button>
+                    <button class="option-button" data-target="FIN">FIN</button>
                 </div>
             </div>
         `;
@@ -186,4 +174,4 @@ class RaízInciertaPassage extends HTMLElement {
   }
 }
 
-export default RaízInciertaPassage;
+export default EpilogoPassage;

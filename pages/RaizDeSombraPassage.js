@@ -1,4 +1,4 @@
-class EpílogoPassage extends HTMLElement {
+class RaizDeSombraPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -126,32 +126,34 @@ class EpílogoPassage extends HTMLElement {
             </style>
 
             <div class="passage-container">
-                <img class="passage-image" src="assets/images/PS18.png" alt="Escena del pasaje">
+                <img class="passage-image" src="assets/images/PS14.png" alt="Escena del pasaje">
                 <div class="passage-text">
-                    Nilo no volvió a la aldea.
-                    Se desvaneció al tocar a Umbra, como una gota que se entrega al río.
+                    El nombre retumbó en su pecho como una campana antigua: Umbra.
 
-                    No hubo despedidas.
-                    Solo silencio.
-                    Y luego… rocío.
+                    No sabía quién era. Ni qué quería. Solo sabía que no lo había visto... porque decidió no verlo.
 
-                    Desde entonces, cada mañana cae una niebla suave sobre el Claro.
-                    Una bruma que refresca, que limpia, que recuerda.
-                    Las hojas perdidas reverdecen.
-                    Las memorias rotas se reconstruyen, poco a poco.
+                    Los días siguientes fueron un desfile de silencios. Nilo recorría el Claro como si buscara algo que había estado ahí y ya no. Las flores tardaban más en abrir. Las mariposas que antes bailaban cerca del arroyo ahora evitaban el viento. La tierra, antes húmeda y fértil, se agrietaba bajo sus pies. Incluso Luma notó que algo estaba cambiando, aunque no dijera nada.
 
-                    Luma lo recuerda.
-                    Lo cuenta en la plaza, bajo el árbol viejo.
-                    A los niños. A los hongos que ahora son libres. A quien quiera escuchar.
+                    En la aldea, los cambios eran imposibles de ignorar. La anciana Mina ya no recordaba las canciones que había cantado toda su vida. Los niños olvidaban los nombres de los árboles que sus padres les habían enseñado. Y el viejo Tero, el mejor tejedor de cestas, miraba sus propias manos como si fueran ajenas, incapaz de recordar patrones que dominaba desde joven.
 
-                    Y así, Nilo sigue aquí.
-                    No como un héroe.
-                    Sino como lo que siempre fue:
+                    —Es como si la memoria se escurriera entre los dedos —dijo alguien en el mercado, mientras intentaba recordar para qué había venido.
 
-                    El Guardián del Rocío.
+                    Nilo lo entendió entonces. El olvido se extendía desde el Claro hasta la aldea, marchitando no solo las plantas sino también los recuerdos. Y con cada memoria perdida, la tierra se secaba un poco más.
+
+                    Una noche, mientras todos dormían, Nilo se acercó al árbol dorado y apoyó la frente contra su corteza.
+
+                    —No supe qué hacer —susurró—. Tenía miedo. A veces todavía lo tengo.
+
+                    La corteza no respondió, pero el suelo tembló suavemente, como si el bosque entero respirara con él.
+
+                    Entonces lo entendió. No se trataba solo de él.
+
+                    El olvido no era suyo. Era del bosque. Era de Umbra, aquella criatura abandonada que crecía alimentándose de memorias. Y si no hacía nada, crecería como maleza sobre todo lo que amaba.
+
+                    Al amanecer, caminó sin detenerse hasta la aldea. Tenía que decirlo. Aunque no supiera cómo. Aunque nadie le creyera.
                 </div>
                 <div class="options-container">
-                    <button class="option-button" data-target="FIN">FIN</button>
+                    <button class="option-button" data-target="Encuentro con Umbra">Advertir a la aldea</button>
                 </div>
             </div>
         `;
@@ -174,4 +176,4 @@ class EpílogoPassage extends HTMLElement {
   }
 }
 
-export default EpílogoPassage;
+export default RaizDeSombraPassage;

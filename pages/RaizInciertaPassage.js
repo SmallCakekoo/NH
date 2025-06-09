@@ -1,4 +1,4 @@
-class ElLugarDondeEmpezóElOlvidoPassage extends HTMLElement {
+class RaizInciertaPassage extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -12,7 +12,7 @@ class ElLugarDondeEmpezóElOlvidoPassage extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
             <style>
-              :host {
+                :host {
                     display: block;
                     padding: 20px;
                 }
@@ -126,59 +126,44 @@ class ElLugarDondeEmpezóElOlvidoPassage extends HTMLElement {
             </style>
 
             <div class="passage-container">
-               <img class="passage-image" src="assets/images/PS29.png" alt="Escena del pasaje">
+               <img class="passage-image" src="assets/images/PS7.png" alt="Escena del pasaje">
                 <div class="passage-text">
-                    El bosque marchito no era oscuro.
-                    Era gris.
+                    Al día siguiente, Nilo volvió al claro.
 
-                    El tipo de gris que no es sombra ni luz, sino una pausa infinita entre ambas. Las hojas crujían como papel seco, y los árboles ya no tenían memoria. Solo costras de lo que alguna vez fue savia.
+                    No había dormido bien. El recuerdo —o el sueño— seguía aferrado a su mente como una espina suave, que no dolía pero no lo dejaba en paz.
 
-                    Nilo avanzó, y con cada paso, el aire se volvía más espeso. Como si el olvido tuviera peso.
+                    El árbol bajo el que se había quedado dormido seguía allí, dorado y silencioso. Pero algo había cambiado. No en el árbol. En él.
 
-                    Entonces lo vio.
+                    Se sentó con las piernas cruzadas, como había visto hacer a los sabios de la aldea. Cerró los ojos. Respiró lento.
 
-                    Umbra.
+                    —¿Qué quieres mostrarme? —susurró.
 
-                    No al acecho. No furioso.
-                    Solo... de pie.
+                    Nada.
 
-                    Ya no era solo una figura de sombra. Había rasgos. Rastros de algo que alguna vez fue tierno. Un brote. Una esperanza.
+                    El viento pasó, ignorante. Las hojas cayeron sin apuro. Y sin embargo… había algo. Un murmullo apenas audible. Como si el claro susurrara, pero no a él.
 
-                    —No puedes detenerme —murmuró Umbra, sin moverse—. No estoy aquí para ser salvado.
+                    "Recuerda. . . quién fuiste antes de preguntar. . ."
 
-                    Nilo se acercó. No para convencerlo, sino para entenderlo.
+                    Nilo abrió los ojos de golpe. ¿Antes de qué? ¿Qué quería decir eso?
 
-                    —No vengo a salvarte. Vengo a recordarte.
+                    —¿Antes de preguntar? ¿Qué significa? —dijo en voz alta, esta vez sin temor a romper el silencio.
 
-                    La frase quedó suspendida como una gota a punto de caer.
-                    Umbra tembló. No de miedo. De duda.
+                    Luma apareció entre la niebla, como si la hubiera llamado con el pensamiento.
 
-                    —¿Por qué? —preguntó. Y por un instante, su voz no era de sombra. Era de alguien que también había sido niño alguna vez.
+                    —¿Otra vez hablando solo?
 
-                    Nilo sacó la corteza que había tallado la noche anterior.
-                    Se la mostró. Un simple círculo.
+                    —No estoy solo —respondió Nilo, más seguro de lo que esperaba—. Solo que el bosque. . . aún no está seguro de que yo sea yo.
 
-                    —Porque fuiste parte de esto. Porque sigues siéndolo. Porque antes del olvido, hubo un juego. Un canto. Una risa. ¿Lo recuerdas? Yo estuve ahí... hasta que te fuiste.
+                    Luma se sentó a su lado. No dijo nada por un rato. Luego, con la voz más tranquila que nunca:
 
-                    Umbra alzó la mano. Dudó. Y entonces, vio.
+                    —Entonces tal vez no tienes que convencer al bosque. Tienes que recordarte a ti.
 
-                    No un recuerdo. Un sentimiento.
-                    El calor del sol en una raíz joven.
-                    La brisa que nombraba cosas sin enseñarlas.
-                    Una risa. Una gota. Un nombre que había enterrado: el suyo.
+                    Nilo la miró. Y por primera vez, pensó que quizá la respuesta no estaba en los árboles. Sino en sus raíces.
 
-                    Y lloró.
-
-                    No con lágrimas. Con grietas.
-
-                    El bosque respondió.
-                    Una hoja cayó. Verde.
-                    Solo una.
-
-                    Pero suficiente.
+                    Las suyas.
                 </div>
                 <div class="options-container">
-                    <button class="option-button" data-target="Memoria Compartida">Recordarle quién fue</button>
+                    <button class="option-button" data-target="Caminos de Memoria">Buscar en su historia</button>
                 </div>
             </div>
         `;
@@ -201,4 +186,4 @@ class ElLugarDondeEmpezóElOlvidoPassage extends HTMLElement {
   }
 }
 
-export default ElLugarDondeEmpezóElOlvidoPassage;
+export default RaizInciertaPassage;
